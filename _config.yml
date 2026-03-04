@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Chao Zhou"
 description              : "Chao Zhou's Homepage. "
-repository               : "zc990708/ChaoZhou.github.io"
+repository               : "ChaoZhou.github.io"
 favicon                  : "images/favicon.png"  # 添加这一行，指向你的新图标
 google_scholar_stats_use_cdn : true
 
