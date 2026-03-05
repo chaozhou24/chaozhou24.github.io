@@ -1,6 +1,6 @@
 ---
 layout: default
-#title: "Publications"
+title: "Publications"
 permalink: /Publications/
 author_profile: true
 ---
@@ -93,17 +93,4 @@ author_profile: true
   <li><b>Chao Zhou</b>, Bin Lyu, Dinh Thai Hoang, and Shimin Gong, "<a href="https://ieeexplore.ieee.org/document/10012813">Reconfigurable Intelligent Surface Assisted Secure Symbiotic Radio Multicast Communications</a>," in <i>Proc. IEEE VTC Fall</i>, 2022.</li>
 </ul>
 
-
-
-
-
-<span class='anchor' id='honors-and-awards'></span>
-# 🎖 Honors and Awards
-- *2021.10* More information coming soon. 
-- *2021.09* More information coming soon.
-
-<span class='anchor' id='educations'></span>
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, More information coming soon.
-- *2015.09 - 2019.06*, More information coming soon.
 
