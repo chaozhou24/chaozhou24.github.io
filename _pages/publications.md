@@ -52,13 +52,22 @@ permalink: /publications/
   <li>Jiapeng Li, Changsheng You, and <b>Chao Zhou</b>, "<a href="https://ieeexplore.ieee.org/document/11162419">Extremely Large-scale Lens Antenna Array: Location-aware Near-field Beamforming</a>," in <i>Proc. IEEE ICC Workshops</i>, 2025.</li>
 </ul>
 
-### 🔄 Flexible Antenna
+###  ⚙ Intelligent antenna and surface
 <ul class="topic-list">
   <li>Liujia Yao, Changsheng You, <b>Chao Zhou</b>, Beixiong Zheng, and Weidong Mei, "<a href="https://ieeexplore.ieee.org/document/11329408">Position Optimization for Two-Layer Movable Antenna Systems</a>," <i>IEEE Wireless Communications Letters</i>, 2026.</li>
 
   <li><b>Chao Zhou</b>, Changsheng You, Beixiong Zheng, Xiaodan Shao, and Rui Zhang, "<a href="https://ieeexplore.ieee.org/document/11039664">Rotatable Antennas for Integrated Sensing and Communications</a>," <i>IEEE Wireless Communications Letters</i>, 2025.</li>
 
   <li>Cong Zhou, Changsheng You, <b>Chao Zhou</b>, Weidong Mei, Zhi Chen, Chengwen Xing, and Rui Zhang, "<a href="https://arxiv.org/abs/2507.01624">Frequency-switching Array Enhanced Physical-Layer Security in Terahertz Bands: A Movable Antenna Perspective</a>," <i>arXiv preprint arXiv:2507.01624</i>, 2025.</li>
+
+    <li><b>Chao Zhou</b>, Changsheng You, Cong Zhou, Liujia Yao, Weijie Yuan, Beixiong Zheng, and Nan Wu, "<a href="https://arxiv.org/abs/2512.15092">Rotatable IRS-Assisted 6DMA Communications: A Two-timescale Design</a>," <i>arXiv preprint arXiv:2512.15092</i>, 2025.</li>
+
+  <li><b>Chao Zhou</b>, Huizhi Wang, and Changsheng You, "<a href="https://ieeexplore.ieee.org/document/10791444">Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions</a>," in <i>Proc. IEEE WCSP</i>, 2024. 🏆 <b>(Best Paper Award)</b></li>
+
+  <li><b>Chao Zhou</b>, Changsheng You, Tianyu Liu, and Bin Lyu, "<a href="https://ieeexplore.ieee.org/document/10868156">Deployment Optimization for XL-IRS Assisted Multi-User Communications</a>," in <i>Proc. IEEE ICSIDP</i>, 2024.</li>
+
+  <li><b>Chao Zhou</b>, Bin Lyu, Dinh Thai Hoang, and Shimin Gong, "<a href="https://ieeexplore.ieee.org/document/10012813">Reconfigurable Intelligent Surface Assisted Secure Symbiotic Radio Multicast Communications</a>," in <i>Proc. IEEE VTC Fall</i>, 2022.</li>
+  
 </ul>
 
 ### 🤝 Symbiotic Radio
@@ -76,13 +85,4 @@ permalink: /publications/
   <li>Bin Lyu, <b>Chao Zhou</b>, Shimin Gong, Dinh Thai Hoang, and Ying-Chang Liang, "<a href="https://ieeexplore.ieee.org/document/10102794">Robust Secure Transmission for Active RIS Enabled Symbiotic Radio Multicast Communications</a>," <i>IEEE Transactions on Wireless Communications</i>, 2023.</li>
 </ul>
 
-### 🪞 RIS/IRS
-<ul class="topic-list">
-  <li><b>Chao Zhou</b>, Changsheng You, Cong Zhou, Liujia Yao, Weijie Yuan, Beixiong Zheng, and Nan Wu, "<a href="https://arxiv.org/abs/2512.15092">Rotatable IRS-Assisted 6DMA Communications: A Two-timescale Design</a>," <i>arXiv preprint arXiv:2512.15092</i>, 2025.</li>
 
-  <li><b>Chao Zhou</b>, Huizhi Wang, and Changsheng You, "<a href="https://ieeexplore.ieee.org/document/10791444">Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions</a>," in <i>Proc. IEEE WCSP</i>, 2024. 🏆 <b>(Best Paper Award)</b></li>
-
-  <li><b>Chao Zhou</b>, Changsheng You, Tianyu Liu, and Bin Lyu, "<a href="https://ieeexplore.ieee.org/document/10868156">Deployment Optimization for XL-IRS Assisted Multi-User Communications</a>," in <i>Proc. IEEE ICSIDP</i>, 2024.</li>
-
-  <li><b>Chao Zhou</b>, Bin Lyu, Dinh Thai Hoang, and Shimin Gong, "<a href="https://ieeexplore.ieee.org/document/10012813">Reconfigurable Intelligent Surface Assisted Secure Symbiotic Radio Multicast Communications</a>," in <i>Proc. IEEE VTC Fall</i>, 2022.</li>
-</ul>
