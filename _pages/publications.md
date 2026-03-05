@@ -43,6 +43,9 @@ permalink: /Publications/
 <span class='anchor' id='publications'></span>
 # 📝 Publications 
 ### 📚 Journal Articles
+
+update
+
 <ul class="pub-list journals">
   <li>Liujia Yao, Changsheng You, <b>Chao Zhou</b>, Beixiong Zheng, and Weidong Mei, "<a href="https://ieeexplore.ieee.org/document/11329408">Position Optimization for Two-Layer Movable Antenna Systems</a>," <i>IEEE Wireless Communications Letters</i>, 2026.</li>
   
