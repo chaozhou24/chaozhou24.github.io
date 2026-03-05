@@ -11,7 +11,6 @@ title                    : "Chao Zhou (周超)"
 title_separator          : "-"
 description              : "Chao Zhou's Homepage"
 url                      : https://chaozhou24.github.io
-baseurl                  : ""
 repository               : "chaozhou24/chaozhou24.github.io" 
 favicon                  : "images/favicon.png"  # 添加这一行，指向你的新图标
 
