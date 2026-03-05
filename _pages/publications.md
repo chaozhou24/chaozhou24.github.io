@@ -1,8 +1,6 @@
 ---
-layout: compress
 title: "Publications"
 permalink: /Publications/
-author_profile: true
 ---
 
 <span class='anchor' id='publications'></span>
