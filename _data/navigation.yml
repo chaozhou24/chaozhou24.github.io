@@ -24,6 +24,7 @@ main:
 
   - title: "Publications"
     url: /Publications
+    target: _self
     
   - title: "Photos"
     url: /Photos/
