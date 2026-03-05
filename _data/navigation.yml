@@ -21,9 +21,7 @@ main:
 #    url: /
   - title: "About Me"
     url: /About.html
-    target: _self
   - title: "Publications"
     url: /Publications/
   - title: "Photos"
     url: /Photos.html
-    target: _self
