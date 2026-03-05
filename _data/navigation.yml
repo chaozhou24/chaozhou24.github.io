@@ -21,7 +21,9 @@ main:
 #    url: /
   - title: "About Me"
     url: /About/
+    
   - title: "Publications"
     url: /Publications/
+    
   - title: "Photos"
     url: /Photos/
