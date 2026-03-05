@@ -60,9 +60,9 @@ permalink: /publications/
 
   <li>Cong Zhou, Changsheng You, <b>Chao Zhou</b>, Weidong Mei, Zhi Chen, Chengwen Xing, and Rui Zhang, "<a href="https://arxiv.org/abs/2507.01624">Frequency-switching Array Enhanced Physical-Layer Security in Terahertz Bands: A Movable Antenna Perspective</a>," <i>arXiv preprint arXiv:2507.01624</i>, 2025.</li>
 
-    <li><b>Chao Zhou</b>, Changsheng You, Cong Zhou, Liujia Yao, Weijie Yuan, Beixiong Zheng, and Nan Wu, "<a href="https://arxiv.org/abs/2512.15092">Rotatable IRS-Assisted 6DMA Communications: A Two-timescale Design</a>," <i>arXiv preprint arXiv:2512.15092</i>, 2025.</li>
+  <li><b>Chao Zhou</b>, Changsheng You, Cong Zhou, Liujia Yao, Weijie Yuan, Beixiong Zheng, and Nan Wu, "<a href="https://arxiv.org/abs/2512.15092">Rotatable IRS-Assisted 6DMA Communications: A Two-timescale Design</a>," <i>arXiv preprint arXiv:2512.15092</i>, 2025.</li>
 
-  <li><b>Chao Zhou</b>, Huizhi Wang, and Changsheng You, "<a href="https://ieeexplore.ieee.org/document/10791444">Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions</a>," in <i>Proc. IEEE WCSP</i>, 2024. 🏆 <b>(Best Paper Award)</b></li>
+   <li><b>Chao Zhou</b>, Huizhi Wang, and Changsheng You, "<a href="https://ieeexplore.ieee.org/document/10791444">Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions</a>," in <i>Proc. IEEE WCSP</i>, 2024. 🏆 <b>(Best Paper Award)</b></li>
 
   <li><b>Chao Zhou</b>, Changsheng You, Tianyu Liu, and Bin Lyu, "<a href="https://ieeexplore.ieee.org/document/10868156">Deployment Optimization for XL-IRS Assisted Multi-User Communications</a>," in <i>Proc. IEEE ICSIDP</i>, 2024.</li>
 
