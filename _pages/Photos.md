@@ -10,10 +10,10 @@ permalink: /Photos.html
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 20px;
-  justify-content: start; /* 整体靠左对齐，如果想居中可以改成 center */
+  justify-content: start;
 }
 
-/* 响应式：屏幕较小时自动减少列数，适配手机和平板 */
+/* 响应式：屏幕较小时自动减少列数 */
 @media (max-width: 980px) {
   .photo-gallery {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -22,24 +22,26 @@ permalink: /Photos.html
 
 /* 增加各个 Section 之间的间距 */
 hr {
-  margin-top: 80px; /* 明显增加章节上方的间隔 */
-  margin-bottom: 40px; /* 章节下方的间隔 */
+  margin-top: 80px; 
+  margin-bottom: 40px; 
   border: none;
-  border-top: 1px solid #eaeaea; /* 稍微淡化分割线，更显高级 */
+  border-top: 1px solid #eaeaea; 
 }
 
 h2 {
-  margin-bottom: 25px; /* 标题和图片之间也稍微留点呼吸感 */
+  margin-bottom: 25px; 
 }
 
 /* 图片容器 */
 .photo-item {
   position: relative;
+  display: flex;
+  flex-direction: column; /* 让图片和文字上下排列 */
 }
 
 /* 图片样式 */
 .photo-item img {
-  width: 100%; /* 配合 grid 布局，宽度设为100%填满300px的格子 */
+  width: 100%; 
   height: 200px;
   object-fit: cover;
 
@@ -51,9 +53,18 @@ h2 {
   z-index: 1;
 }
 
-/* 悬停放大 + 阴影 */
+/* 新增：图片下方的文字描述样式 */
+.photo-caption {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #666; /* 稍微柔和的深灰色 */
+  line-height: 1.4;
+}
+
+/* 悬停放大 + 阴影 (目前仅图片放大) */
 .photo-item img:hover {
-  transform: scale(1.8); /* 稍微调小了一点放大比例，避免3列时放大遮挡太多 */
+  transform: scale(1.8); 
   box-shadow: 0 20px 50px rgba(0,0,0,0.6);
   z-index: 10;
 }
@@ -115,34 +126,42 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/2602dinner.jpg" alt="PhD Photo 1">
+  <div class="photo-caption">2026年2月 实验室聚餐</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2511dongxichong.jpg" alt="PhD Photo 2">
+  <div class="photo-caption">2025年11月 东西涌徒步</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2507Dinner.jpg" alt="PhD Photo 3">
+  <div class="photo-caption">2025年7月 晚餐合影</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2507TanglangMou.jpg" alt="PhD Photo 4">
+  <div class="photo-caption">2025年7月 塘朗山</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2503YangtaiMoun2.jpg" alt="PhD Photo 5">
+  <div class="photo-caption">2025年3月 阳台山</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/DongxiCong1.jpg" alt="PhD Photo 6">
+  <div class="photo-caption">东西涌风景</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2407TanglangMou.jpg" alt="PhD Photo 7">
+  <div class="photo-caption">2024年7月 塘朗山</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/MIMO.jpg" alt="PhD Photo 8">
+  <div class="photo-caption">MIMO 实验设备</div>
 </div>
 
 </div>
@@ -156,10 +175,12 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/2405Gra.jpg" alt="Master's Photo 1">
+  <div class="photo-caption">2024年5月 毕业合影</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2405Gra2.jpg" alt="Master's Photo 2">
+  <div class="photo-caption">2024年5月 毕业留念</div>
 </div>
 
 </div>
@@ -173,10 +194,12 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/Yantai.jpg" alt="Personal Photo 1">
+  <div class="photo-caption">烟台海边</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2401eimen.jpg" alt="Personal Photo 2">
+  <div class="photo-caption">2024年1月 澳门旅行</div>
 </div>
 
 </div>
