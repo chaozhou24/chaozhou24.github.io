@@ -14,15 +14,14 @@ permalink: /Photos.html
 
 /* 图片容器 */
 .photo-item{
-  /* 移除了 overflow:hidden; 否则放大时会被裁切 */
-  position: relative; 
+  position: relative;
 }
 
 /* 图片样式 */
 .photo-item img{
   width:300px;
-  height:200px;            /* 固定高度 */
-  object-fit:cover;        /* 自动裁剪，保证比例不变形 */
+  height:200px;
+  object-fit:cover;
 
   border-radius:12px;
   transition:transform 0.35s ease, box-shadow 0.35s ease;
@@ -34,9 +33,9 @@ permalink: /Photos.html
 
 /* 悬停放大 + 阴影 */
 .photo-item img:hover{
-  transform:scale(2); /* 放大为原来的两倍 */
-  box-shadow:0 20px 50px rgba(0,0,0,0.6); /* 加深阴影，让立体感更强 */
-  z-index: 10; /* 悬停时置于顶层，防止被相邻图片遮挡 */
+  transform:scale(2);
+  box-shadow:0 20px 50px rgba(0,0,0,0.6);
+  z-index: 10;
 }
 
 /* Lightbox 背景 */
@@ -83,73 +82,73 @@ permalink: /Photos.html
 # Photos
 
 Jump to:
-- [Academic Activities](#academic-activities)
-- [Group Activities](#group-activities)
-- [My Trip](#my-trip)
+- [PhD (2024–Present)](#phd)
+- [Master's (2021–2024)](#masters)
+- [Personal](#personal)
 
 ---
 
-<span id="academic-activities"></span>
-## Academic Activities
+<span id="phd"></span>
+## PhD (2024–Present)
 
 <div class="photo-gallery">
 
 <div class="photo-item">
-<img src="/images/academic1.jpg">
+  <img src="/images/academic1.jpg" alt="PhD Photo 1">
 </div>
 
 <div class="photo-item">
-<img src="/images/academic2.jpg">
+  <img src="/images/academic2.jpg" alt="PhD Photo 2">
 </div>
 
 <div class="photo-item">
-<img src="/images/academic3.jpg">
-</div>
-
-</div>
-
----
-
-<span id="group-activities"></span>
-## Group Activities
-
-<div class="photo-gallery">
-
-<div class="photo-item">
-<img src="/images/2507TanglangMou.jpg">
-</div>
-
-<div class="photo-item">
-<img src="/images/2507Dinner.jpg">
-</div>
-
-<div class="photo-item">
-<img src="/images/2504YangtaiMoun.jpg">
-</div>
-
-<div class="photo-item">
-<img src="/images/2510backetball.jpg">
+  <img src="/images/academic3.jpg" alt="PhD Photo 3">
 </div>
 
 </div>
 
 ---
 
-<span id="my-trip"></span>
-## My Trip
+<span id="masters"></span>
+## Master's (2021–2024)
 
 <div class="photo-gallery">
 
 <div class="photo-item">
-<img src="/images/trip1.jpg">
+  <img src="/images/2507TanglangMou.jpg" alt="Master's Photo 1">
 </div>
 
 <div class="photo-item">
-<img src="/images/trip2.jpg">
+  <img src="/images/2507Dinner.jpg" alt="Master's Photo 2">
 </div>
 
 <div class="photo-item">
-<img src="/images/trip3.jpg">
+  <img src="/images/2504YangtaiMoun.jpg" alt="Master's Photo 3">
+</div>
+
+<div class="photo-item">
+  <img src="/images/2510backetball.jpg" alt="Master's Photo 4">
+</div>
+
+</div>
+
+---
+
+<span id="personal"></span>
+## Personal
+
+<div class="photo-gallery">
+
+<div class="photo-item">
+  <img src="/images/trip1.jpg" alt="Personal Photo 1">
+</div>
+
+<div class="photo-item">
+  <img src="/images/trip2.jpg" alt="Personal Photo 2">
+</div>
+
+<div class="photo-item">
+  <img src="/images/trip3.jpg" alt="Personal Photo 3">
 </div>
 
 </div>
@@ -158,32 +157,33 @@ Jump to:
 
 <!-- Lightbox -->
 <div id="lightbox">
-<span id="lightbox-close">&times;</span>
-<img id="lightbox-img">
+  <span id="lightbox-close">&times;</span>
+  <img id="lightbox-img" alt="Enlarged photo">
 </div>
 
 <script>
 
-const images=document.querySelectorAll(".photo-item img");
-const lightbox=document.getElementById("lightbox");
-const lightboxImg=document.getElementById("lightbox-img");
-const closeBtn=document.getElementById("lightbox-close");
+const images = document.querySelectorAll(".photo-item img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.getElementById("lightbox-close");
 
-images.forEach(img=>{
-img.onclick=function(){
-lightbox.style.display="flex";
-lightboxImg.src=this.src;
-}
+images.forEach(img => {
+  img.onclick = function(){
+    lightbox.style.display = "flex";
+    lightboxImg.src = this.src;
+    lightboxImg.alt = this.alt;
+  }
 });
 
-closeBtn.onclick=function(){
-lightbox.style.display="none";
+closeBtn.onclick = function(){
+  lightbox.style.display = "none";
 }
 
-lightbox.onclick=function(e){
-if(e.target===lightbox){
-lightbox.style.display="none";
-}
+lightbox.onclick = function(e){
+  if(e.target === lightbox){
+    lightbox.style.display = "none";
+  }
 }
 
 </script>
