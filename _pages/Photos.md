@@ -14,22 +14,29 @@ permalink: /Photos.html
 
 /* 图片容器 */
 .photo-item{
-  overflow:hidden;
-  border-radius:12px;
+  /* 移除了 overflow:hidden; 否则放大时会被裁切 */
+  position: relative; 
 }
 
 /* 图片样式 */
 .photo-item img{
-  width:300px;
-  height:auto;
+  width:300px; /* 保证所有图片初始宽度一致 */
+  /* height: 200px; 如果你的原图长宽比不一样，可以取消注释这行并配合下一行使用 */
+  /* object-fit: cover; 保证图片不变形 */
+  border-radius:12px; /* 圆角属性移到这里 */
   transition:transform 0.35s ease, box-shadow 0.35s ease;
   cursor:pointer;
+  
+  /* 层级设置 */
+  position: relative;
+  z-index: 1; 
 }
 
 /* 悬停放大 + 阴影 */
 .photo-item img:hover{
-  transform:scale(1.15);
-  box-shadow:0 12px 30px rgba(0,0,0,0.35);
+  transform:scale(2); /* 放大为原来的两倍 */
+  box-shadow:0 20px 50px rgba(0,0,0,0.6); /* 加深阴影，让立体感更强 */
+  z-index: 10; /* 悬停时置于顶层，防止被相邻图片遮挡 */
 }
 
 /* Lightbox 背景 */
