@@ -26,9 +26,10 @@ Jump to:
 <span id="group-activities"></span>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <img src="/images/group1.jpg" alt="Group Activity 1" width="300">
-  <img src="/images/group2.jpg" alt="Group Activity 2" width="300">
-  <img src="/images/group3.jpg" alt="Group Activity 3" width="300">
+  <img src="/images/2507TanglangMou.jpg" alt="Group Activity 1" width="300">
+  <img src="/images/2507Dinner.jpg" alt="Group Activity 2" width="300">
+  <img src="/images/2504YangtaiMoun.jpg" alt="Group Activity 3" width="300">
+  <img src="/images/2510backetball.jpg" alt="Group Activity 3" width="300">
 </div>
 
 ---
