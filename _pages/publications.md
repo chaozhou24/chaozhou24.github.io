@@ -53,7 +53,7 @@ permalink: /Publications.html
   <li>Jiapeng Li, Changsheng You, and <b>Chao Zhou</b>, "<a href="https://ieeexplore.ieee.org/document/11162419">Extremely Large-scale Lens Antenna Array: Location-aware Near-field Beamforming</a>," in <i>Proc. IEEE ICC Workshops</i>, 2025.</li>
 </ul>
 
-##  ⚙ Intelligent antenna and surface
+##  ⚙ Intelligent Antenna and Surface
 <ul class="topic-list">
   <li>Liujia Yao, Changsheng You, <b>Chao Zhou</b>, Beixiong Zheng, and Weidong Mei, "<a href="https://ieeexplore.ieee.org/document/11329408">Position Optimization for Two-Layer Movable Antenna Systems</a>," <i>IEEE Wireless Communications Letters</i>, 2026.</li>
 
