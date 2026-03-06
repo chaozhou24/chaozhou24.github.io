@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-permalink: /Publications
+permalink: /Publications/
 ---
 
 <style>
