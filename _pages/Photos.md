@@ -126,7 +126,7 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/2602dinner.jpg" alt="PhD Photo 1">
-  <div class="photo-caption">[2026-02] Laboratory dinner</div>
+  <div class="photo-caption">[2026-02] Laboratory Dinner</div>
 </div>
 
 <div class="photo-item">
@@ -136,7 +136,7 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/2507Dinner.jpg" alt="PhD Photo 3">
-  <div class="photo-caption">[2025-07] Laboratory dinner</div>
+  <div class="photo-caption">[2025-07] Laboratory Dinner</div>
 </div>
 
 <div class="photo-item">
@@ -161,7 +161,7 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/MIMO.jpg" alt="PhD Photo 8">
-  <div class="photo-caption">[2024-07] MIMO course at Tsinghua Uni.</div>
+  <div class="photo-caption">[2024-07] MIMO Course at Tsinghua Uni.</div>
 </div>
 
 </div>
@@ -175,12 +175,12 @@ Jump to:
 
 <div class="photo-item">
   <img src="/images/2405Gra.jpg" alt="Master's Photo 1">
-  <div class="photo-caption">[2024-05] Graduation photo</div>
+  <div class="photo-caption">[2024-05] Graduation Photo</div>
 </div>
 
 <div class="photo-item">
   <img src="/images/2405Gra2.jpg" alt="Master's Photo 2">
-  <div class="photo-caption">[2024-05] Graduation photo</div>
+  <div class="photo-caption">[2024-05] Graduation Photo</div>
 </div>
 
 </div>
