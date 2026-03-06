@@ -20,16 +20,16 @@ permalink: /Photos.html
 
 /* 图片样式 */
 .photo-item img{
-  width:300px; /* 保证所有图片初始宽度一致 */
-  /* height: 200px; 如果你的原图长宽比不一样，可以取消注释这行并配合下一行使用 */
-  /* object-fit: cover; 保证图片不变形 */
-  border-radius:12px; /* 圆角属性移到这里 */
+  width:300px;
+  height:200px;            /* 固定高度 */
+  object-fit:cover;        /* 自动裁剪，保证比例不变形 */
+
+  border-radius:12px;
   transition:transform 0.35s ease, box-shadow 0.35s ease;
   cursor:pointer;
-  
-  /* 层级设置 */
+
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 /* 悬停放大 + 阴影 */
