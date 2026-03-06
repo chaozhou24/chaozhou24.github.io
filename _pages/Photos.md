@@ -94,36 +94,36 @@ Jump to:
 <div class="photo-gallery">
 
 <div class="photo-item">
-  <img src="/images/MIMO.jpg" alt="PhD Photo 1">
-</div>
-
-<div class="photo-item">
-  <img src="/images/2407TanglangMou.jpg" alt="PhD Photo 2">
-</div>
-
-<div class="photo-item">
-  <img src="/images/DongxiCong1.jpg" alt="PhD Photo 3">
-</div>
-
-<div class="photo-item">
-  <img src="/images/2503YangtaiMoun.jpg" alt="PhD Photo 4">
-</div>
-
-<div class="photo-item">
-  <img src="/images/2507TanglangMou.jpg" alt="PhD Photo 5">
-</div>
-
-<div class="photo-item">
-  <img src="/images/2507Dinner.jpg" alt="PhD Photo 6">
+  <img src="/images/2602dinner.jpg" alt="PhD Photo 1">
 </div
 
 <div class="photo-item">
-  <img src="/images/2511dongxichong.jpg" alt="PhD Photo 7">
+  <img src="/images/2511dongxichong.jpg" alt="PhD Photo 2">
 </div
 
 <div class="photo-item">
-  <img src="/images/2602dinner.jpg" alt="PhD Photo 8">
+  <img src="/images/2507Dinner.jpg" alt="PhD Photo 3">
 </div
+
+<div class="photo-item">
+  <img src="/images/2507TanglangMou.jpg" alt="PhD Photo 4">
+</div>
+
+<div class="photo-item">
+  <img src="/images/2503YangtaiMoun.jpg" alt="PhD Photo 5">
+</div>
+
+<div class="photo-item">
+  <img src="/images/DongxiCong1.jpg" alt="PhD Photo 6">
+</div>
+
+<div class="photo-item">
+  <img src="/images/2407TanglangMou.jpg" alt="PhD Photo 7">
+</div>
+
+<div class="photo-item">
+  <img src="/images/MIMO.jpg" alt="PhD Photo 8">
+</div>
 
 </div>
 
@@ -152,12 +152,14 @@ Jump to:
 <div class="photo-gallery">
 
 <div class="photo-item">
-  <img src="/images/2401eimen.jpg" alt="Personal Photo 1">
+  <img src="/images/Yantai.jpg" alt="Personal Photo 1">
 </div>
 
 <div class="photo-item">
-  <img src="/images/Yantai.jpg" alt="Personal Photo 2">
+  <img src="/images/2401eimen.jpg" alt="Personal Photo 2">
 </div>
+
+
 
 
 </div>
