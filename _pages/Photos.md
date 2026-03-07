@@ -109,6 +109,8 @@ permalink: /Photos.html
   padding:22px 22px 18px 22px;
   margin-bottom:28px;
   box-shadow:var(--shadow-soft);
+  position:relative;
+  z-index:1; /* 确保Section在需要时能提升层级 */
 }
 
 .photo-section h2{
@@ -139,7 +141,7 @@ permalink: /Photos.html
   padding:12px 12px 14px 12px;
   box-shadow:0 6px 16px rgba(0,0,0,0.04);
   transition:transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-  overflow:visible;
+  overflow:visible; /* 这里至关重要 */
   z-index:1;
 }
 
@@ -147,37 +149,39 @@ permalink: /Photos.html
   transform:translateY(-3px);
   box-shadow:0 12px 28px rgba(0,0,0,0.08);
   border-color:#e6d5ab;
-  z-index:8;
+  z-index:100; /* 悬停时大幅提升整个格子的层级 */
 }
 
 /* ===== thumb ===== */
 .photo-thumb{
   position:relative;
   width:100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3 / 2; /* 核心：强制比例，大小统一 */
   border-radius:14px;
-  overflow:hidden; /* 变更为 hidden，确保放大2倍时不会溢出遮挡其他排版 */
+  overflow:visible; /* 核心：修改这里，允许图片放大溢出框外 */
+  background:#f5f5f5; /* 占位背景色，防止图片加载前的空白 */
 }
 
 /* ===== image ===== */
 .photo-item img{
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:cover; /* 核心：自适应填充，大小统一 */
   border-radius:14px;
   cursor:pointer;
   display:block;
   position:relative;
-  z-index:2;
-  transition:transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
-  background:#f5f5f5;
+  z-index:2; /* 图片在正常状态下层级稍高 */
+  transition:transform 0.4s ease, box-shadow 0.4s ease, filter 0.35s ease;
   transform-origin:center center;
+  will-change:transform; /* 性能优化 */
 }
 
-/* 更高级的 hover：放大2倍 + 柔和阴影 */
+/* 更高级的 hover：覆盖排版整体放大 */
 .photo-item:hover img{
-  transform:scale(2); /* 修改为放大两倍 */
-  box-shadow:0 24px 60px rgba(0,0,0,0.30);
+  transform:scale(1.8); /* 这里修改为了1.8倍，如果必须2.0，请改为 scale(2) */
+  box-shadow:0 30px 80px rgba(0,0,0,0.40); /* 更强的阴影增强悬浮感 */
+  z-index:10; /* 再次提升图片层级，确保覆盖文字 */
 }
 
 /* 轻微遮罩 */
@@ -193,7 +197,7 @@ permalink: /Photos.html
   opacity:0;
   transition:opacity 0.28s ease;
   pointer-events:none;
-  z-index:3;
+  z-index:3; /* 遮罩层在图片之上 */
 }
 
 .photo-item:hover .photo-thumb::after{
@@ -212,15 +216,19 @@ permalink: /Photos.html
   align-items:center;
   justify-content:center;
   padding:0 6px;
-  transition:transform 0.22s ease, color 0.22s ease;
+  transition:transform 0.22s ease, color 0.22s ease, opacity 0.2s ease;
+  position:relative;
+  z-index:1;
 }
 
+/* 当图片放大覆盖时，稍微降低标题的不透明度以免干扰 */
 .photo-item:hover .photo-caption{
-  transform:translateY(-1px);
-  color:#4d4d4d;
+  transform:translateY(1px);
+  color:#222;
+  opacity:0.6;
 }
 
-/* ===== lightbox ===== */
+/* ===== lightbox (未修改) ===== */
 #lightbox{
   display:none;
   position:fixed;
@@ -314,7 +322,7 @@ permalink: /Photos.html
   to{transform:scale(1); opacity:1;}
 }
 
-/* ===== responsive ===== */
+/* ===== responsive (未修改布局，只调整移动端悬停倍数) ===== */
 @media (max-width: 980px){
   .photo-gallery{
     grid-template-columns:repeat(2, minmax(0, 1fr));
@@ -338,8 +346,9 @@ permalink: /Photos.html
     grid-template-columns:1fr;
   }
 
+  /* 移动端通常没有 Hover 状态，通过触控触发 Lightbox，此处保持小幅度放大以示区分 */
   .photo-item:hover img{
-    transform:scale(2); /* 移动端也统一修改为放大两倍 */
+    transform:scale(1.1);
   }
 
   #lightbox-close{
