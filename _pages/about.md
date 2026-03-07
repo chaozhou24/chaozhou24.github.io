@@ -388,14 +388,14 @@ redirect_from:
   <div class="news-item">
     <p>
       <span class="news-date">2023.10</span>
-      I received the National Scholarship for Master's Students (Top 2\%), 2023.
+      I received the National Scholarship for Master's Students (Top 2%), 2023.
     </p>
    </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2022.10</span>
-      I received the National Scholarship for Master's Students (Top 2\%), 2022.
+      I received the National Scholarship for Master's Students (Top 2%), 2022.
     </p>
    </div>
   
