@@ -10,8 +10,6 @@ redirect_from:
 
 <style>
 
-/* ===== Page style ===== */
-
 .page__content{
   font-size:17px;
   line-height:1.8;
@@ -19,11 +17,10 @@ redirect_from:
 
 :root{
   --main-color:#7F6000;
-  --light-bg:#faf8f3;
   --border-light:#ece6d8;
 }
 
-/* ===== Hero card ===== */
+/* hero */
 
 .hero-card{
   background:linear-gradient(135deg,#fffdf8 0%,#faf6ea 100%);
@@ -34,15 +31,10 @@ redirect_from:
   box-shadow:0 8px 24px rgba(0,0,0,0.08);
 }
 
-.hero-card h1{
-  margin-top:0;
-}
-
-/* ===== Navigation buttons ===== */
+/* links */
 
 .home-links{
   display:flex;
-  flex-wrap:wrap;
   gap:15px;
   margin-bottom:35px;
 }
@@ -54,8 +46,7 @@ redirect_from:
   background:#fff;
   color:#7F6000;
   font-weight:600;
-  text-decoration:none !important;
-  transition:all 0.25s ease;
+  text-decoration:none;
 }
 
 .home-btn:hover{
@@ -64,7 +55,7 @@ redirect_from:
   box-shadow:0 6px 16px rgba(0,0,0,0.08);
 }
 
-/* ===== Section titles ===== */
+/* titles */
 
 .section-title{
   font-size:1.5rem;
@@ -75,7 +66,7 @@ redirect_from:
   padding-left:12px;
 }
 
-/* ===== Research cards ===== */
+/* research */
 
 .research-grid{
   display:grid;
@@ -89,12 +80,6 @@ redirect_from:
   border-radius:18px;
   padding:22px;
   box-shadow:0 6px 18px rgba(0,0,0,0.05);
-  transition:0.25s;
-}
-
-.research-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 12px 25px rgba(0,0,0,0.1);
 }
 
 .research-card h3{
@@ -102,7 +87,11 @@ redirect_from:
   color:#7F6000;
 }
 
-/* ===== News timeline ===== */
+.research-card ul{
+  padding-left:20px;
+}
+
+/* news */
 
 .news-timeline{
   border-left:3px solid #e6dcc2;
@@ -111,18 +100,6 @@ redirect_from:
 
 .news-item{
   margin-bottom:20px;
-  position:relative;
-}
-
-.news-item::before{
-  content:"";
-  position:absolute;
-  left:-28px;
-  top:7px;
-  width:12px;
-  height:12px;
-  border-radius:50%;
-  background:#7F6000;
 }
 
 .news-date{
@@ -130,7 +107,7 @@ redirect_from:
   color:#7F6000;
 }
 
-/* ===== Service tags ===== */
+/* tags */
 
 .tags{
   display:flex;
@@ -143,7 +120,6 @@ redirect_from:
   border:1px solid #ecdcae;
   padding:6px 14px;
   border-radius:999px;
-  font-size:0.9rem;
 }
 
 .service-block{
@@ -151,32 +127,41 @@ redirect_from:
   border:1px solid var(--border-light);
   border-radius:18px;
   padding:20px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.05);
 }
 
 </style>
 
-Hello 👋, I am **Chao Zhou (周超)**.
 
 <div class="hero-card">
 
-I am a second-year **Ph.D. student at Southern University of Science and Technology (SUSTech)**, advised by Prof. <a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html" target="_blank">Changsheng You</a>.  
-I received the **M.S. degree from Nanjing University of Posts and Telecommunications**.
+<h1>Hello 👋, I am <strong>Chao Zhou (周超)</strong></h1>
 
-My research interests include **Near-Field Communications**, **Intelligent Antenna and Surface**, and **Symbiotic Radio**.  
-I have published several papers in top international communication journals and conferences.
+<p>
+I am a second-year <strong>Ph.D. student at Southern University of Science and Technology (SUSTech)</strong>,
+advised by Prof. 
+<a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html" target="_blank">
+Changsheng You
+</a>.
+I received the <strong>M.S. degree from Nanjing University of Posts and Telecommunications</strong>.
+</p>
 
-If you are interested in collaboration, please feel free to contact me via email:
+<p>
+My research interests include <strong>Near-Field Communications</strong>,
+<strong>Intelligent Antenna and Surface</strong>,
+and <strong>Symbiotic Radio</strong>.
+</p>
 
-**zhouchao2024@mail.sustech.edu.cn**
+<p>
+If you are interested in collaboration, please contact me via email:
+<strong>zhouchao2024@mail.sustech.edu.cn</strong>
+</p>
 
 </div>
 
 
 <div class="home-links">
 
-<a class="home-btn"
-href="mailto:zhouchao2024@mail.sustech.edu.cn">
+<a class="home-btn" href="mailto:zhouchao2024@mail.sustech.edu.cn">
 Email
 </a>
 
@@ -186,14 +171,16 @@ target="_blank">
 Google Scholar
 </a>
 
-<a class="home-btn"
-href="#news">
+<a class="home-btn" href="#news">
 News
 </a>
 
-<a class="home-btn"
-href="/publications/">
+<a class="home-btn" href="/publications.html">
 Publications
+</a>
+
+<a class="home-btn" href="/Photos.html">
+Photos
 </a>
 
 </div>
@@ -205,27 +192,33 @@ Publications
 
 <div class="research-card">
 
-### Near-Field Communications (NFC)
+<h3>Near-Field Communications (NFC)</h3>
 
-- Flexible Beamforming Design  
-- Mixed-field Communications  
-
-</div>
-
-<div class="research-card">
-
-### Intelligent Antenna and Surface
-
-- Intelligent Reflecting Surface  
-- Intelligent Antenna (e.g., movable antennas and rotatable antennas)
+<ul>
+<li>Flexible Beamforming Design</li>
+<li>Mixed-field Communications</li>
+</ul>
 
 </div>
 
 <div class="research-card">
 
-### Backscatter Communications (Backcom)
+<h3>Intelligent Antenna and Surface</h3>
 
-- Symbiotic Radio (SR)
+<ul>
+<li>Intelligent Reflecting Surface</li>
+<li>Intelligent Antenna (e.g., movable antennas and rotatable antennas)</li>
+</ul>
+
+</div>
+
+<div class="research-card">
+
+<h3>Backscatter Communications (Backcom)</h3>
+
+<ul>
+<li>Symbiotic Radio (SR)</li>
+</ul>
 
 </div>
 
@@ -233,7 +226,7 @@ Publications
 
 
 
-<span class='anchor' id='news'></span>
+<span id="news"></span>
 
 <div class="section-title">🔥 News</div>
 
@@ -241,12 +234,12 @@ Publications
 
 <div class="news-item">
 <span class="news-date">2026.01</span>  
-🎉🎉 Three papers have been accepted by IEEE International Conference on Communications (ICC) 2026.
+Three papers have been accepted by IEEE International Conference on Communications (ICC) 2026.
 </div>
 
 <div class="news-item">
 <span class="news-date">2024.11</span>  
-🎉🎉 I received IEEE WCSP Best Paper Award for paper  
+I received IEEE WCSP Best Paper Award for paper
 <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Channel+Estimation+for+XL-IRS+Assisted+Wireless+Systems+with+Double-sided+Visibility+Regions&btnG=" target="_blank">
 Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions
 </a>.
@@ -260,7 +253,7 @@ Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibi
 
 <div class="service-block">
 
-<strong>Reviewer for Journals</strong>
+<p><strong>Reviewer for Journals</strong></p>
 
 <div class="tags">
 
@@ -279,7 +272,7 @@ Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibi
 
 <br>
 
-<strong>Reviewer for Conferences</strong>
+<p><strong>Reviewer for Conferences</strong></p>
 
 <div class="tags">
 
