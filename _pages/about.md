@@ -15,10 +15,10 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
+https://www.sustech.edu.cn/en/faculties/changshengyou.html
 
-<font size=5>Chao Zhou (周超)</font>
 
-I am Chao Zhou.
+Hello 👋, I am Chao Zhou (周超). I am a second-year Ph.D. student at Southern University of Science and Technology (SUSTech), advised by Prof. <a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html">Changsheng You</a>. I received the M.S. degree from Nanjing University of Posts and Telecommunications. My main research interests include Near-Field Communications (NFC), Intelligent Antenna and Surface, and Symbiotic Radio (SR). I have published several papers in the top international communication journals/Conferences. If you are interested in collaboration, feel free to email me at zhouchao2024@mail.sustech.edu.cn.
 
 My research interests include near-field communications and movable antennas.
 
