@@ -156,7 +156,7 @@ permalink: /Photos.html
   width:100%;
   aspect-ratio: 3 / 2;
   border-radius:14px;
-  overflow:visible;
+  overflow:hidden; /* 变更为 hidden，确保放大2倍时不会溢出遮挡其他排版 */
 }
 
 /* ===== image ===== */
@@ -174,9 +174,9 @@ permalink: /Photos.html
   transform-origin:center center;
 }
 
-/* 更高级的 hover：放大 + 柔和阴影 */
+/* 更高级的 hover：放大2倍 + 柔和阴影 */
 .photo-item:hover img{
-  transform:scale(1.22);
+  transform:scale(2); /* 修改为放大两倍 */
   box-shadow:0 24px 60px rgba(0,0,0,0.30);
 }
 
@@ -339,7 +339,7 @@ permalink: /Photos.html
   }
 
   .photo-item:hover img{
-    transform:scale(1.08);
+    transform:scale(2); /* 移动端也统一修改为放大两倍 */
   }
 
   #lightbox-close{
