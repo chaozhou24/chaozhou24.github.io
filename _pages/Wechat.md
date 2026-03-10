@@ -331,14 +331,14 @@ permalink: /Wechat.html
   }
 
   .dc-page {
-    max-width: 1540px;
+    max-width: 1560px;
     margin: 24px auto;
     padding: 0 16px;
   }
 
   .dc-shell {
     display: grid;
-    grid-template-columns: 76px 300px 1fr;
+    grid-template-columns: 72px 270px minmax(0, 1fr);
     min-height: 940px;
     border-radius: var(--dc-radius-lg);
     overflow: hidden;
@@ -460,7 +460,7 @@ permalink: /Wechat.html
     border: 1px solid var(--dc-border);
     background: var(--dc-card);
     color: var(--dc-text);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 10px 12px;
     outline: none;
     font-size: 14px;
@@ -527,7 +527,7 @@ permalink: /Wechat.html
     border: 0;
     background: transparent;
     color: var(--dc-text-soft);
-    border-radius: 10px;
+    border-radius: 12px;
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -693,15 +693,14 @@ permalink: /Wechat.html
   }
 
   .dc-topbar {
-    height: 72px;
+    min-height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
-    padding: 0 20px;
+    padding: 0 22px;
     background: var(--dc-main);
     border-bottom: 1px solid var(--dc-border);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.02);
   }
 
   .dc-topbar-left {
@@ -723,8 +722,8 @@ permalink: /Wechat.html
   .dc-topbar h2 {
     margin: 0;
     color: var(--dc-text);
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 19px;
+    line-height: 1.15;
   }
 
   .dc-topbar p {
@@ -732,12 +731,14 @@ permalink: /Wechat.html
     color: var(--dc-text-soft);
     font-size: 13px;
     line-height: 1.4;
+    max-width: 520px;
   }
 
   .dc-topbar-right {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex: none;
   }
 
   .top-icon-btn {
@@ -762,7 +763,7 @@ permalink: /Wechat.html
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
+    padding: 8px 14px;
     border-radius: 999px;
     background: var(--dc-card);
     border: 1px solid var(--dc-border);
@@ -789,7 +790,7 @@ permalink: /Wechat.html
 
   .dc-main-content {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 250px;
+    grid-template-columns: minmax(0, 1fr) 220px;
     min-height: 0;
     flex: 1;
   }
@@ -803,7 +804,7 @@ permalink: /Wechat.html
   .dc-members {
     background: var(--dc-main-2);
     border-left: 1px solid var(--dc-border);
-    padding: 18px 14px;
+    padding: 16px 12px;
   }
 
   .dc-members.hidden {
@@ -821,14 +822,14 @@ permalink: /Wechat.html
   .member-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .member-item {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 6px;
+    padding: 8px 4px;
     border-radius: 10px;
     transition: background var(--dc-transition);
   }
@@ -857,33 +858,36 @@ permalink: /Wechat.html
   .member-meta strong {
     display: block;
     color: var(--dc-text);
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.2;
   }
 
   .member-meta small {
     display: block;
     color: var(--dc-text-faint);
     margin-top: 2px;
-    line-height: 1.35;
+    line-height: 1.3;
+    font-size: 11px;
   }
 
   .dc-room-intro {
-    display: flex;
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
     gap: 16px;
     align-items: center;
-    padding: 22px 22px 12px;
+    padding: 24px 28px 16px;
     border-bottom: 1px solid var(--dc-border);
   }
 
   .intro-icon {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     border-radius: 18px;
     display: grid;
     place-items: center;
     background: var(--dc-card);
     color: var(--dc-accent);
-    font-size: 32px;
+    font-size: 34px;
     flex: none;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
   }
@@ -892,24 +896,24 @@ permalink: /Wechat.html
     margin: 0;
     color: var(--dc-text);
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 1.18;
     letter-spacing: -0.02em;
   }
 
   .dc-room-intro p {
-    margin: 6px 0 0;
+    margin: 8px 0 0;
     color: var(--dc-text-soft);
-    font-size: 14px;
-    line-height: 1.55;
+    font-size: 15px;
+    line-height: 1.6;
     max-width: 760px;
   }
 
   .dc-chat {
     flex: 1;
-    min-height: 320px;
-    max-height: 540px;
+    min-height: 360px;
+    max-height: 600px;
     overflow-y: auto;
-    padding: 12px 0 8px;
+    padding: 14px 0 8px;
     background: var(--dc-main);
   }
 
@@ -926,7 +930,7 @@ permalink: /Wechat.html
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px 22px 6px;
+    padding: 14px 28px 8px;
   }
 
   .date-separator::before,
@@ -949,7 +953,7 @@ permalink: /Wechat.html
     display: flex;
     gap: 14px;
     align-items: flex-start;
-    padding: 10px 22px;
+    padding: 12px 28px;
     transition: background var(--dc-transition);
     position: relative;
   }
@@ -963,7 +967,7 @@ permalink: /Wechat.html
   }
 
   .msg-row.compact {
-    padding-top: 2px;
+    padding-top: 4px;
   }
 
   .msg-avatar {
@@ -995,7 +999,7 @@ permalink: /Wechat.html
   }
 
   .msg-body {
-    max-width: min(78%, 760px);
+    max-width: min(84%, 920px);
     min-width: 0;
     position: relative;
   }
@@ -1008,7 +1012,7 @@ permalink: /Wechat.html
     display: flex;
     align-items: baseline;
     gap: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 
   .msg-row.outgoing .msg-meta {
@@ -1035,7 +1039,7 @@ permalink: /Wechat.html
     align-items: center;
     gap: 8px;
     max-width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 12px;
     color: var(--dc-text-faint);
     background: rgba(0,0,0,0.04);
@@ -1073,15 +1077,16 @@ permalink: /Wechat.html
     max-width: 100%;
     background: var(--dc-card-soft);
     color: var(--dc-text);
-    border-radius: 16px;
-    padding: 11px 14px;
-    line-height: 1.65;
+    border-radius: 18px;
+    padding: 13px 16px;
+    line-height: 1.75;
     border: 1px solid var(--dc-border);
     box-shadow: 0 8px 18px rgba(0,0,0,0.08);
     word-break: break-word;
     transform: translateY(6px);
     opacity: 0;
     animation: msgIn .18s ease forwards;
+    font-size: 15px;
   }
 
   .msg-row.outgoing .bubble {
@@ -1148,7 +1153,7 @@ permalink: /Wechat.html
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    margin: 2px 22px 12px;
+    margin: 6px 28px 14px;
     color: var(--dc-text-faint);
     font-size: 13px;
   }
@@ -1172,10 +1177,11 @@ permalink: /Wechat.html
   .dc-toolbar {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 14px;
     align-items: center;
-    padding: 14px 18px 10px;
+    padding: 16px 24px 12px;
     border-top: 1px solid var(--dc-border);
+    flex-wrap: wrap;
   }
 
   .dc-role-switch {
@@ -1190,7 +1196,7 @@ permalink: /Wechat.html
   .dc-role-btn {
     border: 0;
     border-radius: 999px;
-    padding: 7px 12px;
+    padding: 8px 14px;
     background: transparent;
     color: var(--dc-text-soft);
     cursor: pointer;
@@ -1221,7 +1227,7 @@ permalink: /Wechat.html
     border-radius: 999px;
     font-size: 13px;
     font-weight: 600;
-    padding: 7px 12px;
+    padding: 8px 12px;
     cursor: pointer;
     transition: background var(--dc-transition), color var(--dc-transition), transform var(--dc-transition);
   }
@@ -1233,8 +1239,8 @@ permalink: /Wechat.html
   }
 
   .reply-bar {
-    margin: 0 18px 10px;
-    padding: 10px 12px;
+    margin: 0 24px 12px;
+    padding: 12px 14px;
     border: 1px solid var(--dc-border);
     background: var(--dc-reply-bg);
     border-radius: 14px;
@@ -1287,7 +1293,7 @@ permalink: /Wechat.html
   }
 
   .dc-input-wrap {
-    padding: 0 18px 18px;
+    padding: 0 24px 20px;
   }
 
   .dc-input-shell {
@@ -1297,7 +1303,7 @@ permalink: /Wechat.html
     background: var(--dc-input);
     border: 1px solid var(--dc-border);
     border-radius: 16px;
-    padding: 10px;
+    padding: 12px;
   }
 
   .dc-input-actions {
@@ -1344,7 +1350,7 @@ permalink: /Wechat.html
   .dc-input-shell button[type="submit"] {
     border: 0;
     border-radius: 12px;
-    padding: 10px 16px;
+    padding: 11px 18px;
     background: linear-gradient(180deg, var(--dc-accent), var(--dc-accent-2));
     color: #fff;
     font-weight: 800;
@@ -1362,7 +1368,7 @@ permalink: /Wechat.html
   .dc-discussion {
     background: var(--dc-main-2);
     border-top: 1px solid var(--dc-border);
-    padding: 18px 20px 26px;
+    padding: 20px 24px 28px;
   }
 
   .dc-discussion-title {
@@ -1391,7 +1397,7 @@ permalink: /Wechat.html
 
   @media (max-width: 1180px) {
     .dc-shell {
-      grid-template-columns: 76px 1fr;
+      grid-template-columns: 72px 1fr;
     }
 
     .dc-sidebar {
@@ -1413,7 +1419,7 @@ permalink: /Wechat.html
     }
 
     .dc-chat {
-      max-height: 420px;
+      max-height: 440px;
     }
   }
 
@@ -1448,7 +1454,8 @@ permalink: /Wechat.html
     }
 
     .dc-room-intro {
-      padding: 18px 16px 10px;
+      grid-template-columns: 56px minmax(0, 1fr);
+      padding: 18px 16px 12px;
     }
 
     .dc-room-intro h3 {
@@ -1460,7 +1467,7 @@ permalink: /Wechat.html
     }
 
     .msg-body {
-      max-width: 86%;
+      max-width: 90%;
     }
 
     .dc-input-wrap {
@@ -1485,6 +1492,14 @@ permalink: /Wechat.html
 
     .reply-bar {
       margin: 0 12px 10px;
+    }
+
+    .date-separator,
+    .dc-typing {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 </style>
@@ -1624,10 +1639,8 @@ permalink: /Wechat.html
     function createDateSeparator(text) {
       const row = document.createElement('div');
       row.className = 'date-separator';
-
       const label = document.createElement('span');
       label.textContent = text;
-
       row.appendChild(label);
       return row;
     }
