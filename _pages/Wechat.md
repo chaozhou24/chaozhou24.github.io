@@ -129,9 +129,6 @@ permalink: /Wechat.html
           <button id="theme-toggle" class="top-icon-btn active" type="button" aria-label="Toggle theme" title="Toggle theme">
             <span id="theme-icon">🌙</span>
           </button>
-          <button id="toggle-members" class="top-icon-btn active" type="button" aria-label="Toggle members" title="Toggle members">
-            <span>👥</span>
-          </button>
           <div class="dc-status-pill">
             <span class="status-dot"></span>
             <span id="chat-status">3 channels available</span>
@@ -139,123 +136,83 @@ permalink: /Wechat.html
         </div>
       </header>
 
-      <div class="dc-main-content">
-        <div class="dc-chat-panel">
-          <div class="dc-room-intro">
-            <div class="intro-icon hash-mark">#</div>
-            <div>
-              <h3 id="intro-heading">Welcome to #public-chat</h3>
-              <p id="intro-text">This is the beginning of the channel. Start a conversation, share ideas, or switch to a more focused room.</p>
-            </div>
-          </div>
-
-          <div id="quick-chat" class="dc-chat" aria-live="polite"></div>
-
-          <div id="typing-row" class="dc-typing" hidden>
-            <span></span><span></span><span></span>
-            <em id="typing-text">Someone is typing...</em>
-          </div>
-
-          <div class="dc-toolbar">
-            <div class="dc-role-switch" role="group" aria-label="Switch sender role">
-              <button id="role-visitor" class="dc-role-btn active" type="button" data-role="visitor">Visitor</button>
-              <button id="role-author" class="dc-role-btn" type="button" data-role="author">Author</button>
-            </div>
-
-            <div class="dc-prompts" aria-label="Quick prompts">
-              <button type="button" data-prompt="@Author I’d like to ask about choosing a research direction.">@Author question</button>
-              <button type="button" data-prompt="I want to share a paper I recently found interesting:">Share a paper</button>
-              <button type="button" data-prompt="How do you keep a healthy balance between research and daily life?">Work-life balance</button>
-            </div>
-          </div>
-
-          <div id="reply-bar" class="reply-bar" hidden>
-            <div class="reply-bar-content">
-              <div class="reply-bar-title">Replying to <span id="reply-target-name">Author</span></div>
-              <div id="reply-target-text" class="reply-bar-text"></div>
-            </div>
-            <button id="cancel-reply" class="reply-close-btn" type="button" aria-label="Cancel reply">✕</button>
-          </div>
-
-          <form id="chat-form" class="dc-input-wrap" autocomplete="off">
-            <div class="dc-input-shell">
-              <div class="dc-input-actions">
-                <button class="input-icon-btn" type="button" data-insert="[Attachment] " aria-label="Attachment" title="Attachment">＋</button>
-                <button class="input-icon-btn" type="button" data-insert="😊 " aria-label="Emoji" title="Emoji">😊</button>
-                <button class="input-icon-btn" type="button" data-insert="[GIF] " aria-label="GIF" title="GIF">GIF</button>
-              </div>
-
-              <input
-                id="chat-text"
-                type="text"
-                maxlength="280"
-                placeholder="Message this channel"
-                aria-label="Type a chat message"
-              />
-
-              <button type="submit">Send</button>
-            </div>
-          </form>
-
-          <div class="dc-discussion">
-            <div class="dc-discussion-title">Long-form Discussion</div>
-            <p>Use the quick chat above for fast interaction. For deeper and persistent discussion, leave your thoughts below.</p>
-
-            <script src="https://giscus.app/client.js"
-                    data-repo="chaozhou24/chaozhou24.github.io"
-                    data-repo-id="R_kgDORD_nug"
-                    data-category="General"
-                    data-category-id="DIC_kwDORD_nus4C4BcA"
-                    data-mapping="pathname"
-                    data-strict="0"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-input-position="bottom"
-                    data-theme="dark"
-                    data-lang="en"
-                    crossorigin="anonymous"
-                    async>
-            </script>
+      <div class="dc-chat-panel">
+        <div class="dc-room-intro">
+          <div class="intro-icon hash-mark">#</div>
+          <div>
+            <h3 id="intro-heading">Welcome to #public-chat</h3>
+            <p id="intro-text">This is the beginning of the channel. Start a conversation, share ideas, or switch to a more focused room.</p>
           </div>
         </div>
 
-        <aside id="members-panel" class="dc-members">
-          <div class="members-title">MEMBERS — ONLINE</div>
+        <div id="quick-chat" class="dc-chat" aria-live="polite"></div>
 
-          <div class="member-group">
-            <div class="member-item">
-              <span class="member-avatar member-owner">CZ</span>
-              <div class="member-meta">
-                <strong>Chao Zhou</strong>
-                <small>Owner · Active now</small>
-              </div>
-            </div>
+        <div id="typing-row" class="dc-typing" hidden>
+          <span></span><span></span><span></span>
+          <em id="typing-text">Someone is typing...</em>
+        </div>
 
-            <div class="member-item">
-              <span class="member-avatar member-research">RS</span>
-              <div class="member-meta">
-                <strong>Research Buddy</strong>
-                <small>Discussing methods</small>
-              </div>
-            </div>
-
-            <div class="member-item">
-              <span class="member-avatar member-life">LF</span>
-              <div class="member-meta">
-                <strong>Life Friend</strong>
-                <small>Sharing routines</small>
-              </div>
-            </div>
-
-            <div class="member-item">
-              <span class="member-avatar member-guest">GT</span>
-              <div class="member-meta">
-                <strong>Guest Visitor</strong>
-                <small>Reading this channel</small>
-              </div>
-            </div>
+        <div class="dc-toolbar">
+          <div class="dc-role-switch" role="group" aria-label="Switch sender role">
+            <button id="role-visitor" class="dc-role-btn active" type="button" data-role="visitor">Visitor</button>
+            <button id="role-author" class="dc-role-btn" type="button" data-role="author">Author</button>
           </div>
-        </aside>
+
+          <div class="dc-prompts" aria-label="Quick prompts">
+            <button type="button" data-prompt="@Author I’d like to ask about choosing a research direction.">@Author question</button>
+            <button type="button" data-prompt="I want to share a paper I recently found interesting:">Share a paper</button>
+            <button type="button" data-prompt="How do you keep a healthy balance between research and daily life?">Work-life balance</button>
+          </div>
+        </div>
+
+        <div id="reply-bar" class="reply-bar" hidden>
+          <div class="reply-bar-content">
+            <div class="reply-bar-title">Replying to <span id="reply-target-name">Author</span></div>
+            <div id="reply-target-text" class="reply-bar-text"></div>
+          </div>
+          <button id="cancel-reply" class="reply-close-btn" type="button" aria-label="Cancel reply">✕</button>
+        </div>
+
+        <form id="chat-form" class="dc-input-wrap" autocomplete="off">
+          <div class="dc-input-shell">
+            <div class="dc-input-actions">
+              <button class="input-icon-btn" type="button" data-insert="[Attachment] " aria-label="Attachment" title="Attachment">＋</button>
+              <button class="input-icon-btn" type="button" data-insert="😊 " aria-label="Emoji" title="Emoji">😊</button>
+              <button class="input-icon-btn" type="button" data-insert="[GIF] " aria-label="GIF" title="GIF">GIF</button>
+            </div>
+
+            <input
+              id="chat-text"
+              type="text"
+              maxlength="280"
+              placeholder="Message this channel"
+              aria-label="Type a chat message"
+            />
+
+            <button type="submit">Send</button>
+          </div>
+        </form>
+
+        <div class="dc-discussion">
+          <div class="dc-discussion-title">Long-form Discussion</div>
+          <p>Use the quick chat above for fast interaction. For deeper and persistent discussion, leave your thoughts below.</p>
+
+          <script src="https://giscus.app/client.js"
+                  data-repo="chaozhou24/chaozhou24.github.io"
+                  data-repo-id="R_kgDORD_nug"
+                  data-category="General"
+                  data-category-id="DIC_kwDORD_nus4C4BcA"
+                  data-mapping="pathname"
+                  data-strict="0"
+                  data-reactions-enabled="1"
+                  data-emit-metadata="0"
+                  data-input-position="bottom"
+                  data-theme="dark"
+                  data-lang="en"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+        </div>
       </div>
     </section>
   </div>
@@ -731,7 +688,7 @@ permalink: /Wechat.html
     color: var(--dc-text-soft);
     font-size: 13px;
     line-height: 1.4;
-    max-width: 520px;
+    max-width: 640px;
   }
 
   .dc-topbar-right {
@@ -788,106 +745,30 @@ permalink: /Wechat.html
     100% { box-shadow: 0 0 0 0 rgba(35, 165, 89, 0); }
   }
 
-  .dc-main-content {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 220px;
-    min-height: 0;
-    flex: 1;
-  }
-
   .dc-chat-panel {
     min-width: 0;
     display: flex;
     flex-direction: column;
   }
 
-  .dc-members {
-    background: var(--dc-main-2);
-    border-left: 1px solid var(--dc-border);
-    padding: 16px 12px;
-  }
-
-  .dc-members.hidden {
-    display: none;
-  }
-
-  .members-title {
-    color: var(--dc-text-faint);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    margin-bottom: 14px;
-  }
-
-  .member-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .member-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 4px;
-    border-radius: 10px;
-    transition: background var(--dc-transition);
-  }
-
-  .member-item:hover {
-    background: var(--dc-card-hover);
-  }
-
-  .member-avatar {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-weight: 800;
-    font-size: 12px;
-    color: #fff;
-    flex: none;
-  }
-
-  .member-owner { background: linear-gradient(135deg, #5865f2, #7a84ff); }
-  .member-research { background: linear-gradient(135deg, #f0b232, #f7c75d); color: #3a2400; }
-  .member-life { background: linear-gradient(135deg, #23a559, #57f287); }
-  .member-guest { background: linear-gradient(135deg, #4ea1ff, #7cc1ff); color: #072744; }
-
-  .member-meta strong {
-    display: block;
-    color: var(--dc-text);
-    font-size: 13px;
-    line-height: 1.2;
-  }
-
-  .member-meta small {
-    display: block;
-    color: var(--dc-text-faint);
-    margin-top: 2px;
-    line-height: 1.3;
-    font-size: 11px;
-  }
-
   .dc-room-intro {
     display: grid;
     grid-template-columns: 70px minmax(0, 1fr);
-    gap: 16px;
+    gap: 18px;
     align-items: center;
-    padding: 24px 28px 16px;
+    padding: 26px 34px 18px;
     border-bottom: 1px solid var(--dc-border);
   }
 
   .intro-icon {
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 62px;
     border-radius: 18px;
     display: grid;
     place-items: center;
     background: var(--dc-card);
     color: var(--dc-accent);
-    font-size: 34px;
+    font-size: 36px;
     flex: none;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
   }
@@ -895,8 +776,8 @@ permalink: /Wechat.html
   .dc-room-intro h3 {
     margin: 0;
     color: var(--dc-text);
-    font-size: 24px;
-    line-height: 1.18;
+    font-size: 26px;
+    line-height: 1.16;
     letter-spacing: -0.02em;
   }
 
@@ -904,14 +785,14 @@ permalink: /Wechat.html
     margin: 8px 0 0;
     color: var(--dc-text-soft);
     font-size: 15px;
-    line-height: 1.6;
-    max-width: 760px;
+    line-height: 1.65;
+    max-width: 860px;
   }
 
   .dc-chat {
     flex: 1;
-    min-height: 360px;
-    max-height: 600px;
+    min-height: 380px;
+    max-height: 640px;
     overflow-y: auto;
     padding: 14px 0 8px;
     background: var(--dc-main);
@@ -930,7 +811,7 @@ permalink: /Wechat.html
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 14px 28px 8px;
+    padding: 16px 34px 8px;
   }
 
   .date-separator::before,
@@ -953,7 +834,7 @@ permalink: /Wechat.html
     display: flex;
     gap: 14px;
     align-items: flex-start;
-    padding: 12px 28px;
+    padding: 12px 34px;
     transition: background var(--dc-transition);
     position: relative;
   }
@@ -999,7 +880,7 @@ permalink: /Wechat.html
   }
 
   .msg-body {
-    max-width: min(84%, 920px);
+    max-width: min(88%, 1100px);
     min-width: 0;
     position: relative;
   }
@@ -1069,7 +950,7 @@ permalink: /Wechat.html
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 360px;
+    max-width: 400px;
   }
 
   .bubble {
@@ -1078,7 +959,7 @@ permalink: /Wechat.html
     background: var(--dc-card-soft);
     color: var(--dc-text);
     border-radius: 18px;
-    padding: 13px 16px;
+    padding: 14px 18px;
     line-height: 1.75;
     border: 1px solid var(--dc-border);
     box-shadow: 0 8px 18px rgba(0,0,0,0.08);
@@ -1153,7 +1034,7 @@ permalink: /Wechat.html
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    margin: 6px 28px 14px;
+    margin: 6px 34px 14px;
     color: var(--dc-text-faint);
     font-size: 13px;
   }
@@ -1179,7 +1060,7 @@ permalink: /Wechat.html
     justify-content: space-between;
     gap: 14px;
     align-items: center;
-    padding: 16px 24px 12px;
+    padding: 16px 28px 12px;
     border-top: 1px solid var(--dc-border);
     flex-wrap: wrap;
   }
@@ -1239,7 +1120,7 @@ permalink: /Wechat.html
   }
 
   .reply-bar {
-    margin: 0 24px 12px;
+    margin: 0 28px 12px;
     padding: 12px 14px;
     border: 1px solid var(--dc-border);
     background: var(--dc-reply-bg);
@@ -1272,7 +1153,7 @@ permalink: /Wechat.html
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 700px;
+    max-width: 760px;
   }
 
   .reply-close-btn {
@@ -1293,7 +1174,7 @@ permalink: /Wechat.html
   }
 
   .dc-input-wrap {
-    padding: 0 24px 20px;
+    padding: 0 28px 22px;
   }
 
   .dc-input-shell {
@@ -1368,7 +1249,7 @@ permalink: /Wechat.html
   .dc-discussion {
     background: var(--dc-main-2);
     border-top: 1px solid var(--dc-border);
-    padding: 20px 24px 28px;
+    padding: 22px 28px 30px;
   }
 
   .dc-discussion-title {
@@ -1383,16 +1264,6 @@ permalink: /Wechat.html
     color: var(--dc-text-soft);
     font-size: 14px;
     line-height: 1.6;
-  }
-
-  @media (max-width: 1320px) {
-    .dc-main-content {
-      grid-template-columns: minmax(0, 1fr);
-    }
-
-    .dc-members {
-      display: none;
-    }
   }
 
   @media (max-width: 1180px) {
@@ -1419,7 +1290,7 @@ permalink: /Wechat.html
     }
 
     .dc-chat {
-      max-height: 440px;
+      max-height: 480px;
     }
   }
 
@@ -1467,7 +1338,7 @@ permalink: /Wechat.html
     }
 
     .msg-body {
-      max-width: 90%;
+      max-width: 92%;
     }
 
     .dc-input-wrap {
@@ -1549,8 +1420,6 @@ permalink: /Wechat.html
     const promptButtons = Array.from(document.querySelectorAll('.dc-prompts button'));
     const inputActionButtons = Array.from(document.querySelectorAll('.input-icon-btn'));
     const channelSearch = document.getElementById('channel-search');
-    const toggleMembersBtn = document.getElementById('toggle-members');
-    const membersPanel = document.getElementById('members-panel');
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const replyBar = document.getElementById('reply-bar');
@@ -1967,14 +1836,6 @@ permalink: /Wechat.html
           const matched = !keyword || text.indexOf(keyword) !== -1;
           btn.classList.toggle('hidden-by-search', !matched);
         });
-      });
-    }
-
-    if (toggleMembersBtn && membersPanel) {
-      toggleMembersBtn.addEventListener('click', function () {
-        const willHide = !membersPanel.classList.contains('hidden');
-        membersPanel.classList.toggle('hidden', willHide);
-        toggleMembersBtn.classList.toggle('active', !willHide);
       });
     }
 
