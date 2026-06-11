@@ -361,6 +361,15 @@ redirect_from:
 <div class="section-title">🔥 News</div>
 
 <div class="news-timeline">
+
+  <div class="news-item">
+    <p>
+      <span class="news-date">2026.03</span>
+      Our paper "MA-enhanced Mixed Near-field and Far-field Covert Communications" was accepted by IEEE Transactions on Wireless Communications.
+    </p>
+  </div>
+
+  
   <div class="news-item">
     <p>
       <span class="news-date">2026.01</span>
