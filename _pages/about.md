@@ -363,10 +363,27 @@ redirect_from:
 <div class="news-timeline">
 
   <div class="news-item">
-    <p>
-      <span class="news-date">2026.03</span>
-      Our paper "MA-enhanced Mixed Near-field and Far-field Covert Communications" was accepted by IEEE Transactions on Wireless Communications.
-    </p>
+  <p>
+    <span class="news-date">2026.05</span>
+    Our paper
+    <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank">
+      Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty
+    </a>
+    was accepted by IEEE Transactions on Wireless Communications.
+  </p>
+  </div>
+
+
+
+  <div class="news-item">
+  <p>
+    <span class="news-date">2026.03</span>
+    Our paper
+    <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank">
+      MA-enhanced Mixed Near-field and Far-field Covert Communications
+    </a>
+    was accepted by IEEE Transactions on Wireless Communications.
+  </p>
   </div>
 
   
