@@ -363,6 +363,13 @@ redirect_from:
 <div class="news-timeline">
 
   <div class="news-item">
+    <p>
+      <span class="news-date">2026.06</span>
+      One paper has been accepted by the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.
+    </p>
+  </div>
+
+  <div class="news-item">
   <p>
     <span class="news-date">2026.05</span>
     Our paper
