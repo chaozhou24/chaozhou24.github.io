@@ -1,3 +1,4 @@
+```html
 ---
 permalink: /
 title: ""
@@ -21,30 +22,30 @@ redirect_from:
   --text-soft:#555555;
   --shadow-soft:0 8px 24px rgba(0,0,0,0.06);
   --shadow-hover:0 14px 32px rgba(0,0,0,0.10);
-  --radius-lg:22px;
   --radius-md:18px;
-  --radius-sm:14px;
 }
 
+/* ===== Global Text Style ===== */
 .page__content{
+  font-family:"Times New Roman", Times, serif;
   font-size:17px;
   line-height:1.75;
   color:var(--text-main);
 }
 
-/* 普通文字超链接格式，类似第一个图 */
 .page__content a{
-  color:#0000EE;
+  color:#1f5fae;
   text-decoration:underline;
 }
 
 .page__content a:hover{
-  color:#0000EE;
+  color:#0b3f88;
   text-decoration:underline;
 }
 
-/* ===== Plain Intro, no card border ===== */
+/* ===== Plain Intro ===== */
 .hero-card{
+  font-family:"Times New Roman", Times, serif;
   background:none;
   border:none;
   border-radius:0;
@@ -70,105 +71,131 @@ redirect_from:
   color:var(--text-main);
 }
 
-/* ===== Plain Text Links ===== */
+/* ===== Refined Text Navigation ===== */
 .home-links{
-  display:block;
-  margin:8px 0 34px 0;
+  font-family:"Times New Roman", Times, serif;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:26px;
+  margin:10px 0 34px 0;
+  padding:6px 0 4px 0;
 }
 
 .home-btn{
-  display:inline;
-  padding:0;
-  margin-right:20px;
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  padding:2px 0 5px 0;
+  color:var(--main-dark) !important;
+  font-size:1.02rem;
+  font-weight:700;
+  letter-spacing:0.2px;
+  text-decoration:none !important;
   border:none;
-  border-radius:0;
   background:none;
   box-shadow:none;
-  color:#0000EE !important;
-  font-weight:normal;
-  text-decoration:underline !important;
-  transition:none;
+  transition:color 0.22s ease, transform 0.22s ease;
+}
+
+.home-btn::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:2px;
+  border-radius:999px;
+  background:linear-gradient(90deg, var(--main-color), var(--main-light));
+  opacity:0.9;
 }
 
 .home-btn:hover{
-  background:none;
-  border:none;
-  transform:none;
-  box-shadow:none;
-  color:#0000EE !important;
-  text-decoration:underline !important;
+  color:var(--main-color) !important;
+  text-decoration:none !important;
+  transform:translateY(-1px);
 }
 
-/* ===== Section Title ===== */
+.home-btn:hover::after{
+  opacity:1;
+}
+
+/* ===== Section Title: No Left Vertical Bar ===== */
 .section-title{
+  position:relative;
   display:flex;
   align-items:center;
   gap:10px;
   font-size:1.55rem;
   font-weight:800;
   color:var(--text-main);
-  margin:36px 0 18px 0;
-  padding-left:14px;
-  border-left:5px solid var(--main-color);
+  margin:38px 0 20px 0;
+  padding:0 0 9px 0;
+  border-left:none;
 }
 
-/* ===== Highlight bar ===== */
-.highlight-bar{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin:0 0 28px 0;
+.section-title::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:92px;
+  height:2px;
+  border-radius:999px;
+  background:linear-gradient(90deg, var(--main-color), var(--main-light), rgba(176,138,26,0.15));
 }
 
-.highlight-pill{
+/* ===== Research Interests: Minimal Structured List ===== */
+.research-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  border-top:1px solid #eee6d8;
+}
+
+.research-item{
+  display:grid;
+  grid-template-columns:58px 1fr;
+  column-gap:16px;
+  align-items:start;
+  padding:18px 0;
+  border-bottom:1px solid #eee6d8;
+  transition:transform 0.22s ease;
+}
+
+.research-item:hover{
+  transform:translateX(3px);
+}
+
+.research-index{
   display:inline-flex;
   align-items:center;
-  padding:7px 14px;
-  border-radius:999px;
-  background:#fffaf0;
-  border:1px solid #eadab0;
+  justify-content:center;
+  width:42px;
+  height:28px;
+  border-left:4px solid var(--main-color);
   color:var(--main-dark);
-  font-size:0.94rem;
-  font-weight:700;
+  font-weight:800;
+  letter-spacing:0.5px;
 }
 
-/* ===== Research Cards ===== */
-.research-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:22px;
-}
-
-.research-card{
-  background:var(--card-bg);
-  border:1px solid var(--border-light);
-  border-radius:var(--radius-md);
-  padding:22px 22px 18px 22px;
-  box-shadow:var(--shadow-soft);
-  transition:transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.research-card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-hover);
-  border-color:#e0d0a8;
-}
-
-.research-card h3{
-  margin:0 0 14px 0;
+.research-content h3{
+  margin:0 0 7px 0;
   color:var(--main-color);
-  font-size:1.18rem;
-  line-height:1.4;
+  font-size:1.15rem;
+  line-height:1.35;
+  font-weight:800;
 }
 
-.research-card ul{
+.research-content p{
   margin:0;
-  padding-left:22px;
+  color:var(--text-soft);
+  line-height:1.65;
 }
 
-.research-card li{
-  margin:10px 0;
-  color:var(--text-soft);
+.research-keyword{
+  font-weight:700;
+  color:#333333;
 }
 
 /* ===== News Timeline ===== */
@@ -209,38 +236,82 @@ redirect_from:
   color:var(--text-main);
 }
 
-/* ===== Service Block ===== */
+/* ===== Academic Services: Minimal Accent List ===== */
 .service-block{
-  background:var(--card-bg);
-  border:1px solid var(--border-light);
-  border-radius:var(--radius-md);
-  padding:22px;
-  box-shadow:var(--shadow-soft);
+  background:none;
+  border:none;
+  box-shadow:none;
+  padding:0;
+  margin:0;
 }
 
-.service-heading{
-  margin:0 0 10px 0;
-  font-size:1.02rem;
-  color:var(--text-main);
+.service-list{
+  list-style:none;
+  margin:0;
+  padding:0;
 }
 
-.tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+.service-item{
+  position:relative;
+  margin:0;
+  padding:0 0 17px 18px;
+  background:none;
+  border:none;
+  box-shadow:none;
+  transition:transform 0.22s ease;
 }
 
-.tag{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:7px 14px;
+.service-item:not(:last-child){
+  margin-bottom:16px;
+  border-bottom:1px solid #eee8dc;
+}
+
+.service-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:7px;
+  width:4px;
+  height:calc(100% - 24px);
+  min-height:24px;
   border-radius:999px;
-  background:#fff7e3;
-  border:1px solid #ecdcae;
-  color:#6f5400;
-  font-size:0.93rem;
-  font-weight:650;
+  background:linear-gradient(180deg, var(--main-color), var(--main-light));
+}
+
+.service-item:hover{
+  transform:translateX(3px);
+}
+
+.service-role{
+  display:inline;
+  margin-right:6px;
+  color:#333333;
+  font-weight:800;
+}
+
+.service-role::after{
+  content:",";
+  color:#555555;
+  font-weight:700;
+}
+
+.service-venue{
+  font-style:italic;
+  color:#4a4a4a;
+}
+
+.service-detail{
+  color:#4f4f4f;
+}
+
+.service-abbr{
+  font-weight:700;
+  color:#333333;
+}
+
+.service-muted{
+  color:var(--main-dark);
+  font-weight:700;
 }
 
 /* ===== Responsive ===== */
@@ -253,8 +324,29 @@ redirect_from:
     font-size:1.35rem;
   }
 
+  .section-title::after{
+    width:78px;
+  }
+
+  .home-links{
+    gap:16px;
+  }
+
   .home-btn{
-    margin-right:14px;
+    font-size:1rem;
+  }
+
+  .research-item{
+    grid-template-columns:46px 1fr;
+    column-gap:12px;
+  }
+
+  .research-index{
+    width:36px;
+  }
+
+  .service-item{
+    padding-left:16px;
   }
 }
 </style>
@@ -262,7 +354,7 @@ redirect_from:
 <div class="hero-card">
 
   <p>
-    Hello :-)
+    Hello 👋
   </p>
 
   <p>
@@ -274,8 +366,7 @@ redirect_from:
     I received the M.S. degree from Nanjing University of Posts and Telecommunications.
     My research interests include Near-Field Communications, Intelligent Antenna and Surface,
     and Symbiotic Radio. I have published several papers in top international communication
-    journals and conferences.
-    If you are interested in collaboration, please contact me via email:
+    journals and conferences. If you are interested in collaboration, please contact me via email:
     <span class="hero-email">zhouchao2024@mail.sustech.edu.cn</span>
   </p>
 
@@ -289,33 +380,43 @@ redirect_from:
   <a class="home-btn" href="/Photos.html">Photos</a>
 </div>
 
-
 <div class="section-title">📖 Research Interests</div>
 
-<div class="research-grid">
-  <div class="research-card">
-    <h3>Near-Field Communications</h3>
-    <ul>
-      <li>Flexible Beamforming Design</li>
-      <li>Mixed-field Communications</li>
-    </ul>
-  </div>
+<ul class="research-list">
 
-  <div class="research-card">
-    <h3>Intelligent Antenna and Surface</h3>
-    <ul>
-      <li>Intelligent Reflecting Surface</li>
-      <li>Reconfigurable Antenna</li>
-    </ul>
-  </div>
+  <li class="research-item">
+    <div class="research-index">01</div>
+    <div class="research-content">
+      <h3>Near-Field Communications</h3>
+      <p>
+        <span class="research-keyword">Flexible beamforming design</span> and
+        <span class="research-keyword">mixed-field communications</span>.
+      </p>
+    </div>
+  </li>
 
-  <div class="research-card">
-    <h3>Backscatter Communications</h3>
-    <ul>
-      <li>Symbiotic Radio</li>
-    </ul>
-  </div>
-</div>
+  <li class="research-item">
+    <div class="research-index">02</div>
+    <div class="research-content">
+      <h3>Intelligent Antenna and Surface</h3>
+      <p>
+        <span class="research-keyword">Intelligent reflecting surface</span> and
+        <span class="research-keyword">reconfigurable antenna</span>.
+      </p>
+    </div>
+  </li>
+
+  <li class="research-item">
+    <div class="research-index">03</div>
+    <div class="research-content">
+      <h3>Backscatter Communications</h3>
+      <p>
+        <span class="research-keyword">Symbiotic radio</span>.
+      </p>
+    </div>
+  </li>
+
+</ul>
 
 <span id="news"></span>
 
@@ -395,34 +496,50 @@ redirect_from:
 <div class="section-title">📄 Academic Services</div>
 
 <div class="service-block">
-  <p class="service-heading"><strong>Reviewer for Journals</strong></p>
-  <div class="tags">
-    <span class="tag">IEEE JSAC</span>
-    <span class="tag">IEEE TWC</span>
-    <span class="tag">IEEE TMC</span>
-    <span class="tag">IEEE TCOM</span>
-    <span class="tag">IEEE TCCN</span>
-    <span class="tag">IEEE TVT</span>
-    <span class="tag">IEEE TGCN</span>
-    <span class="tag">IEEE JSTEAP</span>
-    <span class="tag">IEEE OJ-COMS</span>
-    <span class="tag">IEEE WCL</span>
-    <span class="tag">IEEE CL</span>
-    <span class="tag">IEEE China com</span>
-  </div>
+  <ul class="service-list">
 
-  <div style="height:16px;"></div>
+    <li class="service-item">
+      <span class="service-role">Reviewer for Journals</span>
+      <span class="service-detail">
+        <span class="service-muted">IEEE journals:</span>
+        <span class="service-abbr">JSAC</span>,
+        <span class="service-abbr">TWC</span>,
+        <span class="service-abbr">TMC</span>,
+        <span class="service-abbr">TCOM</span>,
+        <span class="service-abbr">TCCN</span>,
+        <span class="service-abbr">TVT</span>,
+        <span class="service-abbr">TGCN</span>,
+        <span class="service-abbr">JSTEAP</span>,
+        <span class="service-abbr">OJ-COMS</span>,
+        <span class="service-abbr">WCL</span>,
+        <span class="service-abbr">CL</span>;
+        <span class="service-muted">others:</span>
+        <span class="service-abbr">China Commun.</span>
+      </span>
+    </li>
 
-  <p class="service-heading"><strong>Reviewer for Conferences</strong></p>
-  <div class="tags">
-    <span class="tag">ICC 2026</span>
-    <span class="tag">WCNC 2026</span>
-    <span class="tag">ICC 2025</span>
-    <span class="tag">GLOBECOM 2025</span>
-    <span class="tag">ICCC 2025</span>
-    <span class="tag">GLOBECOM 2024</span>
-    <span class="tag">WCSP 2024</span>
-    <span class="tag">PIMRC 2024</span>
-    <span class="tag">WCNC 2024</span>
-  </div>
+    <li class="service-item">
+      <span class="service-role">Reviewer for Conferences</span>
+      <span class="service-detail">
+        <span class="service-abbr">IEEE ICC</span> 2025/2026,
+        <span class="service-abbr">IEEE WCNC</span> 2024/2026,
+        <span class="service-abbr">IEEE GLOBECOM</span> 2024/2025,
+        <span class="service-abbr">IEEE/CIC ICCC</span> 2025,
+        <span class="service-abbr">IEEE PIMRC</span> 2024,
+        and <span class="service-abbr">WCSP</span> 2024.
+      </span>
+    </li>
+
+    <li class="service-item">
+      <span class="service-role">Special Session Co-Chair</span>
+      <span class="service-venue">
+        Extremely Large-Scale MIMO for Near-Field Communication and Sensing
+      </span>
+      <span class="service-detail">
+        at <span class="service-abbr">IEEE ISWCS</span> 2026.
+      </span>
+    </li>
+
+  </ul>
 </div>
+```
