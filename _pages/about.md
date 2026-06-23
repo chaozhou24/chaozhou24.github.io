@@ -25,11 +25,21 @@ redirect_from:
 }
 
 /* ===== Global Text Style ===== */
+.page__content,
+.page__content *{
+  font-family:"Times New Roman", Times, serif !important;
+}
+
 .page__content{
-  font-family:"Times New Roman", Times, serif;
   font-size:17px;
-  line-height:1.75;
+  line-height:1.72;
   color:var(--text-main);
+}
+
+.page__content p,
+.page__content li{
+  text-align:justify;
+  text-justify:inter-word;
 }
 
 .page__content a{
@@ -42,14 +52,13 @@ redirect_from:
   text-decoration:underline;
 }
 
-/* ===== Plain Intro ===== */
+/* ===== Plain Intro: Largest Text Area ===== */
 .hero-card{
-  font-family:"Times New Roman", Times, serif;
   background:none;
   border:none;
   border-radius:0;
   padding:0;
-  margin:0 0 18px 0;
+  margin:0 0 22px 0;
   box-shadow:none;
   overflow:visible;
 }
@@ -59,10 +68,19 @@ redirect_from:
 }
 
 .hero-card p{
-  margin:0 0 16px 0;
-  font-size:1rem;
-  line-height:1.75;
+  margin:0 0 18px 0;
+  font-size:20px;
+  line-height:1.85;
   color:var(--text-main);
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.hero-card .hello-line{
+  font-size:20px;
+  line-height:1.6;
+  margin-bottom:20px;
+  text-align:left;
 }
 
 .hero-email{
@@ -72,13 +90,13 @@ redirect_from:
 
 /* ===== Refined Text Navigation ===== */
 .home-links{
-  font-family:"Times New Roman", Times, serif;
   display:flex;
   flex-wrap:wrap;
   align-items:center;
   gap:26px;
-  margin:10px 0 34px 0;
+  margin:12px 0 36px 0;
   padding:6px 0 4px 0;
+  text-align:left;
 }
 
 .home-btn{
@@ -87,7 +105,7 @@ redirect_from:
   align-items:center;
   padding:2px 0 5px 0;
   color:var(--main-dark) !important;
-  font-size:1.02rem;
+  font-size:18px;
   font-weight:700;
   letter-spacing:0.2px;
   text-decoration:none !important;
@@ -126,12 +144,13 @@ redirect_from:
   display:flex;
   align-items:center;
   gap:10px;
-  font-size:1.55rem;
+  font-size:25px;
   font-weight:800;
   color:var(--text-main);
-  margin:38px 0 20px 0;
+  margin:40px 0 20px 0;
   padding:0 0 9px 0;
   border-left:none;
+  text-align:left;
 }
 
 .section-title::after{
@@ -180,22 +199,28 @@ redirect_from:
   height:28px;
   border-left:4px solid var(--main-color);
   color:var(--main-dark);
+  font-size:17px;
   font-weight:800;
   letter-spacing:0.5px;
+  text-align:left;
 }
 
 .research-content h3{
   margin:0 0 7px 0;
   color:var(--main-color);
-  font-size:1.15rem;
+  font-size:20px;
   line-height:1.35;
   font-weight:800;
+  text-align:left;
 }
 
 .research-content p{
   margin:0;
   color:var(--text-soft);
-  line-height:1.65;
+  font-size:18px;
+  line-height:1.7;
+  text-align:justify;
+  text-justify:inter-word;
 }
 
 .research-keyword{
@@ -239,6 +264,10 @@ redirect_from:
 .news-item p{
   margin:0;
   color:var(--text-main);
+  font-size:18px;
+  line-height:1.72;
+  text-align:justify;
+  text-justify:inter-word;
 }
 
 /* ===== Academic Services: Minimal Accent List, No Circle Timeline ===== */
@@ -291,6 +320,7 @@ redirect_from:
   display:inline;
   margin-right:6px;
   color:#333333;
+  font-size:18px;
   font-weight:800;
 }
 
@@ -301,12 +331,17 @@ redirect_from:
 }
 
 .service-venue{
+  font-size:18px;
   font-style:italic;
   color:#4a4a4a;
 }
 
 .service-detail{
+  font-size:18px;
   color:#4f4f4f;
+  line-height:1.72;
+  text-align:justify;
+  text-justify:inter-word;
 }
 
 .service-abbr{
@@ -325,8 +360,17 @@ redirect_from:
     font-size:16px;
   }
 
+  .hero-card p{
+    font-size:18px;
+    line-height:1.78;
+  }
+
+  .hero-card .hello-line{
+    font-size:18px;
+  }
+
   .section-title{
-    font-size:1.35rem;
+    font-size:22px;
   }
 
   .section-title::after{
@@ -338,7 +382,7 @@ redirect_from:
   }
 
   .home-btn{
-    font-size:1rem;
+    font-size:17px;
   }
 
   .research-item{
@@ -348,6 +392,19 @@ redirect_from:
 
   .research-index{
     width:36px;
+    font-size:16px;
+  }
+
+  .research-content h3{
+    font-size:19px;
+  }
+
+  .research-content p,
+  .news-item p,
+  .service-role,
+  .service-venue,
+  .service-detail{
+    font-size:17px;
   }
 
   .service-item{
@@ -358,7 +415,7 @@ redirect_from:
 
 <div class="hero-card">
 
-  <p>
+  <p class="hello-line">
     Hello 👋
   </p>
 
@@ -547,4 +604,3 @@ redirect_from:
 
   </ul>
 </div>
-
