@@ -1,4 +1,3 @@
-
 ---
 permalink: /
 title: ""
@@ -98,6 +97,7 @@ redirect_from:
   transition:color 0.22s ease, transform 0.22s ease;
 }
 
+/* 默认完整展开的渐变下划线 */
 .home-btn::after{
   content:"";
   position:absolute;
@@ -142,10 +142,15 @@ redirect_from:
   width:92px;
   height:2px;
   border-radius:999px;
-  background:linear-gradient(90deg, var(--main-color), var(--main-light), rgba(176,138,26,0.15));
+  background:linear-gradient(
+    90deg,
+    var(--main-color),
+    var(--main-light),
+    rgba(176,138,26,0.15)
+  );
 }
 
-/* ===== Research Interests: Minimal Structured List ===== */
+/* ===== Research Interests: Clean Structured List ===== */
 .research-list{
   margin:0;
   padding:0;
@@ -236,7 +241,7 @@ redirect_from:
   color:var(--text-main);
 }
 
-/* ===== Academic Services: Minimal Accent List ===== */
+/* ===== Academic Services: Minimal Accent List, No Circle Timeline ===== */
 .service-block{
   background:none;
   border:none;
