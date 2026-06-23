@@ -1,4 +1,4 @@
-```html
+
 ---
 permalink: /
 title: ""
@@ -542,4 +542,4 @@ redirect_from:
 
   </ul>
 </div>
-```
+
