@@ -15,8 +15,6 @@ redirect_from:
   --main-light:#b08a1a;
   --soft-bg:#faf8f3;
   --card-bg:#ffffff;
-  --hero-bg-start:#fffdf8;
-  --hero-bg-end:#f8f2e6;
   --border-light:#ece6d8;
   --border-mid:#e2d6b8;
   --text-main:#222222;
@@ -30,103 +28,75 @@ redirect_from:
 
 .page__content{
   font-size:17px;
-  line-height:1.85;
+  line-height:1.75;
   color:var(--text-main);
 }
 
+/* 普通文字超链接格式，类似第一个图 */
 .page__content a{
-  color:#1f5fae;
-  text-decoration:none;
-}
-
-.page__content a:hover{
+  color:#0000EE;
   text-decoration:underline;
 }
 
-/* ===== Hero ===== */
+.page__content a:hover{
+  color:#0000EE;
+  text-decoration:underline;
+}
+
+/* ===== Plain Intro, no card border ===== */
 .hero-card{
-  position:relative;
-  overflow:hidden;
-  background:linear-gradient(135deg,var(--hero-bg-start) 0%,var(--hero-bg-end) 100%);
-  border:1px solid var(--border-light);
-  border-radius:26px;
-  padding:34px 38px 30px 38px;
-  margin-bottom:18px;
-  box-shadow:var(--shadow-soft);
+  background:none;
+  border:none;
+  border-radius:0;
+  padding:0;
+  margin:0 0 18px 0;
+  box-shadow:none;
+  overflow:visible;
 }
 
 .hero-card::after{
-  content:"";
-  position:absolute;
-  right:-80px;
-  top:-80px;
-  width:220px;
-  height:220px;
-  border-radius:50%;
-  background:radial-gradient(circle, rgba(176,138,26,0.12) 0%, rgba(176,138,26,0.03) 55%, rgba(176,138,26,0) 72%);
-  pointer-events:none;
-}
-
-.hero-title{
-  margin:0 0 10px 0;
-  font-size:2.2rem;
-  font-weight:800;
-  line-height:1.25;
-  color:var(--text-main);
-}
-
-.hero-subtitle{
-  display:inline-block;
-  margin-bottom:18px;
-  padding:6px 14px;
-  border-radius:999px;
-  background:#fff8e7;
-  border:1px solid #ead9a9;
-  color:var(--main-dark);
-  font-size:0.96rem;
-  font-weight:700;
+  display:none;
 }
 
 .hero-card p{
-  margin:0 0 14px 0;
-  font-size:1.05rem;
+  margin:0 0 16px 0;
+  font-size:1rem;
+  line-height:1.75;
   color:var(--text-main);
 }
 
 .hero-email{
-  font-weight:700;
-  color:var(--main-dark);
+  font-weight:normal;
+  color:var(--text-main);
 }
 
-/* ===== Quick Links ===== */
+/* ===== Plain Text Links ===== */
 .home-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin:4px 0 34px 0;
+  display:block;
+  margin:8px 0 34px 0;
 }
 
 .home-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:10px 18px;
-  border-radius:999px;
-  border:1px solid var(--border-mid);
-  background:#fff;
-  color:var(--main-color) !important;
-  font-weight:700;
-  text-decoration:none !important;
-  box-shadow:0 3px 10px rgba(0,0,0,0.03);
-  transition:all 0.22s ease;
+  display:inline;
+  padding:0;
+  margin-right:20px;
+  border:none;
+  border-radius:0;
+  background:none;
+  box-shadow:none;
+  color:#0000EE !important;
+  font-weight:normal;
+  text-decoration:underline !important;
+  transition:none;
 }
 
 .home-btn:hover{
-  background:#fff7dd;
-  border-color:#d8c38d;
-  transform:translateY(-2px);
-  box-shadow:0 10px 20px rgba(0,0,0,0.08);
-  text-decoration:none !important;
+  background:none;
+  border:none;
+  transform:none;
+  box-shadow:none;
+  color:#0000EE !important;
+  text-decoration:underline !important;
 }
 
 /* ===== Section Title ===== */
@@ -275,14 +245,6 @@ redirect_from:
 
 /* ===== Responsive ===== */
 @media (max-width: 768px){
-  .hero-card{
-    padding:26px 22px;
-  }
-
-  .hero-title{
-    font-size:1.8rem;
-  }
-
   .page__content{
     font-size:16px;
   }
@@ -290,34 +252,33 @@ redirect_from:
   .section-title{
     font-size:1.35rem;
   }
+
+  .home-btn{
+    margin-right:14px;
+  }
 }
 </style>
 
 <div class="hero-card">
-  <div class="hero-subtitle">🎓Ph.D. Student @ SUSTech</div>
-
-  <h1 class="hero-title">Hello 👋, I am <strong>Chao Zhou (周超)</strong></h1>
 
   <p>
-    I am a second-year <strong>Ph.D. student at Southern University of Science and Technology (SUSTech)</strong>,
+    Hello :-)
+  </p>
+
+  <p>
+    I am a Ph.D. candidate at Southern University of Science and Technology (SUSTech),
     advised by Prof.
     <a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html" target="_blank">
       Changsheng You
     </a>.
-    I received the <strong>M.S. degree from Nanjing University of Posts and Telecommunications</strong>.
-  </p>
-
-  <p>
-    My research interests include <strong>Near-Field Communications</strong>,
-    <strong>Intelligent Antenna and Surface</strong>, and
-    <strong>Symbiotic Radio</strong>.
-    I have published several papers in top international communication journals and conferences.
-  </p>
-
-  <p>
+    I received the M.S. degree from Nanjing University of Posts and Telecommunications.
+    My research interests include Near-Field Communications, Intelligent Antenna and Surface,
+    and Symbiotic Radio. I have published several papers in top international communication
+    journals and conferences.
     If you are interested in collaboration, please contact me via email:
     <span class="hero-email">zhouchao2024@mail.sustech.edu.cn</span>
   </p>
+
 </div>
 
 <div class="home-links">
@@ -370,30 +331,27 @@ redirect_from:
   </div>
 
   <div class="news-item">
-  <p>
-    <span class="news-date">2026.05</span>
-    Our paper
-    <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank">
-      Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty
-    </a>
-    was accepted by IEEE Transactions on Wireless Communications.
-  </p>
+    <p>
+      <span class="news-date">2026.05</span>
+      Our paper
+      <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank">
+        Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty
+      </a>
+      was accepted by IEEE Transactions on Wireless Communications.
+    </p>
   </div>
-
-
 
   <div class="news-item">
-  <p>
-    <span class="news-date">2026.03</span>
-    Our paper
-    <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank">
-      MA-enhanced Mixed Near-field and Far-field Covert Communications
-    </a>
-    was accepted by IEEE Transactions on Wireless Communications.
-  </p>
+    <p>
+      <span class="news-date">2026.03</span>
+      Our paper
+      <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank">
+        MA-enhanced Mixed Near-field and Far-field Covert Communications
+      </a>
+      was accepted by IEEE Transactions on Wireless Communications.
+    </p>
   </div>
 
-  
   <div class="news-item">
     <p>
       <span class="news-date">2026.01</span>
@@ -423,15 +381,15 @@ redirect_from:
       <span class="news-date">2023.10</span>
       I received the National Scholarship for Master's Students (Top 2%), 2023.
     </p>
-   </div>
+  </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2022.10</span>
       I received the National Scholarship for Master's Students (Top 2%), 2022.
     </p>
-   </div>
-  
+  </div>
+
 </div>
 
 <div class="section-title">📄 Academic Services</div>
