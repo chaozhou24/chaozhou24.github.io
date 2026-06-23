@@ -317,17 +317,15 @@ redirect_from:
 }
 
 .service-role{
-  display:inline;
-  margin-right:6px;
+  display:inline-block;
+  margin-right:8px;
   color:#333333;
   font-size:18px;
   font-weight:800;
-}
-
-.service-role::after{
-  content:",";
-  color:#555555;
-  font-weight:700;
+  text-decoration:underline;
+  text-decoration-color:var(--main-light);
+  text-decoration-thickness:1.5px;
+  text-underline-offset:4px;
 }
 
 .service-venue{
@@ -425,7 +423,11 @@ redirect_from:
     <a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html" target="_blank">
       Changsheng You
     </a>.
-    I received the M.S. degree from Nanjing University of Posts and Telecommunications.
+    I received the M.S. degree from Nanjing University of Posts and Telecommunications,
+    under the supervision of Prof.
+    <a href="https://scholar.google.com/citations?user=0C3BRkEAAAAJ&hl=zh-CN&oi=ao" target="_blank">
+      Bin Lyu
+    </a>.
     My research interests include Near-Field Communications, Intelligent Antenna and Surface,
     and Symbiotic Radio. I have published several papers in top international communication
     journals and conferences. If you are interested in collaboration, please contact me via email:
