@@ -488,10 +488,16 @@ redirect_from:
 
 <div class="news-timeline">
 
+
+
   <div class="news-item">
     <p>
       <span class="news-date">2026.06</span>
-      One paper has been accepted by the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.
+      Our paper
+      <a href="https://arxiv.org/abs/2606.25629" target="_blank">
+        Event-Adaptive Motion Planning with Distilled Vision-Language Model in Safety-Critical Situations
+      </a>
+      was accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.
     </p>
   </div>
 
