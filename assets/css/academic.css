@@ -1,0 +1,49 @@
+/* Shared academic template for all site pages. */
+body { color: #333; background: #fff; }
+.page__content, .page__content * { font-family: Georgia, "Times New Roman", serif; }
+.page__content { color: #333; font-size: 18px; line-height: 1.65; }
+.page__content p, .page__content li { text-align: justify; text-justify: inter-word; }
+.page__content a, .sidebar a, .masthead a, .page__footer a,
+.page__content a:visited, .sidebar a:visited, .masthead a:visited { color: #111; font-weight: 700; text-decoration: none; }
+.page__content a, .page__footer a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.page__content a:hover, .sidebar a:hover, .masthead a:hover, .page__footer a:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
+.greedy-nav .visible-links a::before { background: #111; }
+.sidebar, .sidebar .social-icons i { color: #333 !important; }
+.sidebar .author__name { color: #111; font-family: Georgia, "Times New Roman", serif; }
+.sidebar .author__avatar img { width: 160px; height: 160px; object-fit: cover; object-position: center; padding: 0; border: 0; border-radius: 50%; }
+
+/* Shared navigation and profile on every page. */
+.masthead .greedy-nav a, .masthead .greedy-nav a:visited { color: #111; font-family: "Segoe UI", Arial, sans-serif; font-weight: 700; text-decoration: none; }
+.masthead .greedy-nav a:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+.masthead .greedy-nav .visible-links a::before { background: #111; }
+.sidebar .author__urls a, .sidebar .author__urls_sm a { color: #111; font-weight: 700; text-decoration: none; }
+.page__content b, .page__content strong { color: #111; }
+
+/* The photo gallery shares the same white page heading and text navigation. */
+body .page__content { color: #333; font-size: 18px; line-height: 1.65; }
+body .page__content > p { text-align: justify; text-justify: inter-word; }
+body .page__content .photo-hero { margin: 0 0 24px; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+body .photo-hero::after { display: none; }
+body .page__content .photo-hero h1 { margin: 0 0 20px; padding: 0; border: 0; color: #111; font-size: 32px; font-weight: 700; line-height: 1.2; }
+body .photo-hero p { color: #333; }
+body .photo-nav { gap: 10px 24px; margin: 22px 0 32px; }
+body .page__content .photo-nav a, body .page__content .photo-nav a:hover { padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; transform: none; color: #111 !important; font-size: 16px; text-decoration: underline !important; text-underline-offset: 3px; }
+body .photo-section { margin: 36px 0 0; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
+body .page__content .photo-section h2 { padding-bottom: 10px; border-bottom: 1px solid #e5e5e5; color: #111; font-size: 28px; line-height: 1.3; }
+body .photo-item { background: #fff; border-color: #e5e5e5; box-shadow: none; }
+body .photo-item:hover { border-color: #ccc; }
+body .photo-caption { color: #555; }
+
+/* Keep the interactive community's own controls legible in both themes. */
+.dc-page, .dc-page * { font-family: "Segoe UI", Arial, sans-serif; }
+.dc-page p, .dc-page li { text-align: left; }
+.dc-page a, .dc-page a:visited, .dc-page a:hover { color: var(--dc-text); }
+.dc-page b, .dc-page strong { color: inherit; }
+
+@media (max-width: 767px) {
+  body .page__content { font-size: 17px; line-height: 1.6; }
+  .sidebar .author__avatar img { width: 75px; height: 75px; }
+  body .page__content .photo-hero h1 { font-size: 28px; }
+  body .page__content .photo-section h2 { font-size: 24px; }
+}

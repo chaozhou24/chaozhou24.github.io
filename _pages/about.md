@@ -9,20 +9,7 @@ redirect_from:
 ---
 
 <style>
-/* These styles belong to the homepage; other pages retain their own design. */
-body { color: #333; background: #fff; }
-.page__content, .page__content * { font-family: Georgia, "Times New Roman", serif; }
-.page__content { color: #333; font-size: 18px; line-height: 1.65; }
-.page__content p, .page__content li { text-align: justify; text-justify: inter-word; }
-.page__content a, .sidebar a, .masthead a, .page__footer a,
-.page__content a:visited, .sidebar a:visited, .masthead a:visited { color: #111; font-weight: 700; text-decoration: none; }
-.page__content a, .page__footer a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-.page__content a:hover, .sidebar a:hover, .masthead a:hover, .page__footer a:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }
-a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
-.greedy-nav .visible-links a::before { background: #111; }
-.sidebar, .sidebar .social-icons i { color: #333 !important; }
-.sidebar .author__name { color: #111; font-family: Georgia, "Times New Roman", serif; }
-.sidebar .author__avatar img { width: 160px; height: 160px; object-fit: cover; object-position: center; padding: 0; border: 0; border-radius: 50%; }
+/* Homepage content layout; common styling is in academic.css. */
 .hero-card { margin: 0 0 24px; padding: 0; border: 0; background: none; box-shadow: none; }
 .hero-card p { margin: 0 0 18px; }
 .page__content .hello-line { margin: 0 0 20px; padding: 0; border: 0; color: #111; font-size: 32px; font-weight: 700; line-height: 1.2; }
@@ -52,10 +39,8 @@ a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
 .service-muted { color: #111; font-weight: 700; }
 .page__content .hero-email { overflow-wrap: anywhere; }
 @media (max-width: 767px) {
-  .page__content { font-size: 17px; line-height: 1.6; }
   .page__content .hello-line { font-size: 28px; }
   .page__content .section-title { font-size: 24px; margin-top: 30px; }
-  .sidebar .author__avatar img { width: 75px; height: 75px; }
   .home-links { gap: 10px 18px; }
   .news-item { grid-template-columns: 62px minmax(0, 1fr); gap: 10px; }
   .news-date { font-size: 14px; }
