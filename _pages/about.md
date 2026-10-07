@@ -13,7 +13,7 @@ redirect_from:
 body { color: #333; background: #fff; }
 .page__content, .page__content * { font-family: Georgia, "Times New Roman", serif; }
 .page__content { color: #333; font-size: 18px; line-height: 1.65; }
-.page__content p, .page__content li { text-align: left; }
+.page__content p, .page__content li { text-align: justify; text-justify: inter-word; }
 .page__content a, .sidebar a, .masthead a, .page__footer a,
 .page__content a:visited, .sidebar a:visited, .masthead a:visited { color: #111; font-weight: 700; text-decoration: none; }
 .page__content a, .page__footer a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -222,9 +222,9 @@ a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
     <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, 2026. &middot; <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank" rel="noopener noreferrer">Paper</a> &middot; <a href="https://arxiv.org/abs/2601.13549" target="_blank" rel="noopener noreferrer">arXiv</a></p>
   </li>
   <li>
-    <a class="publication-title" href="https://ieeexplore.ieee.org/document/10342707" target="_blank" rel="noopener noreferrer">Cooperative Commensal and Parasitic Symbiotic Radio Communication Systems</a>
-    <p class="publication-authors"><strong>Chao Zhou</strong>, Bin Lyu, Changsheng You, and Dinh Thai Hoang.</p>
-    <p class="publication-meta"><i>IEEE Transactions on Communications</i>, 2024. &middot; <a href="https://ieeexplore.ieee.org/document/10342707" target="_blank" rel="noopener noreferrer">Paper</a></p>
+    <a class="publication-title" href="https://ieeexplore.ieee.org/document/11448582" target="_blank" rel="noopener noreferrer">MA-enhanced Mixed Near-field and Far-field Covert Communications</a>
+    <p class="publication-authors"><strong>Chao Zhou</strong>, Changsheng You, Cong Zhou, Hai Lin, and Yi Gong.</p>
+    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, 2026. &middot; <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank" rel="noopener noreferrer">Paper</a> &middot; <a href="https://arxiv.org/abs/2511.08107" target="_blank" rel="noopener noreferrer">arXiv</a></p>
   </li>
 </ol>
 <p class="all-publications"><a href="/Publications.html">View all publications &rarr;</a></p>

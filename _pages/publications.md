@@ -4,349 +4,48 @@ permalink: /Publications.html
 ---
 
 <style>
-:root{
-  --main-color:#7F6000;
-  --main-dark:#5f4700;
-  --main-light:#b88a00;
-  --accent-blue:#1f5fae;
-  --soft-bg:#faf8f3;
-  --card-bg:#ffffff;
-  --hero-bg-start:#fffdf8;
-  --hero-bg-end:#f7f1e6;
-  --border-light:#ece6d8;
-  --border-mid:#e4d7b7;
-  --text-main:#222222;
-  --text-soft:#555555;
-  --shadow-soft:0 8px 24px rgba(0,0,0,0.05);
-  --shadow-hover:0 14px 28px rgba(0,0,0,0.08);
-}
+/* Monochrome academic typography, matching the homepage. */
+body { color: #333; background: #fff; }
+.page__content, .page__content * { font-family: Georgia, "Times New Roman", serif; }
+.page__content { color: #333; font-size: 18px; line-height: 1.65; }
+.page__content p, .page__content li { text-align: justify; text-justify: inter-word; }
+.page__content a, .sidebar a, .masthead a, .page__footer a,
+.page__content a:visited, .sidebar a:visited, .masthead a:visited { color: #111; font-weight: 700; text-decoration: none; }
+.page__content a, .page__footer a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.page__content a:hover, .sidebar a:hover, .masthead a:hover, .page__footer a:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
+.greedy-nav .visible-links a::before { background: #111; }
+.sidebar, .sidebar .social-icons i { color: #333 !important; }
+.sidebar .author__name { color: #111; font-family: Georgia, "Times New Roman", serif; }
+.sidebar .author__avatar img { width: 160px; height: 160px; object-fit: cover; object-position: center; padding: 0; border: 0; border-radius: 50%; }
 
-html{
-  scroll-behavior:smooth;
-}
-
-.page__content{
-  font-size:17px;
-  line-height:1.8;
-  color:var(--text-main);
-}
-
-/* ===== layout ===== */
-.pub-layout{
-  display:grid;
-  grid-template-columns:minmax(0, 1fr) 170px;
-  gap:22px;
-  align-items:start;
-}
-
-.pub-main{
-  min-width:0;
-}
-
-/* ===== Page header ===== */
-.pub-hero{
-  background:linear-gradient(135deg,var(--hero-bg-start) 0%,var(--hero-bg-end) 100%);
-  border:1px solid var(--border-light);
-  border-radius:24px;
-  padding:30px 34px;
-  margin-bottom:20px;
-  box-shadow:var(--shadow-soft);
-  position:relative;
-  overflow:hidden;
-}
-
-.pub-hero::after{
-  content:"";
-  position:absolute;
-  right:-70px;
-  top:-70px;
-  width:210px;
-  height:210px;
-  border-radius:50%;
-  background:radial-gradient(circle, rgba(184,138,0,0.10) 0%, rgba(184,138,0,0.03) 55%, rgba(184,138,0,0) 72%);
-  pointer-events:none;
-}
-
-.pub-hero h1{
-  margin:0 0 10px 0;
-  font-size:2rem;
-  font-weight:800;
-  color:var(--text-main);
-}
-
-.pub-hero p{
-  margin:0;
-  color:var(--text-soft);
-  font-size:1.02rem;
-}
-
-/* ===== top topic nav ===== */
-.topic-nav{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin:0 0 28px 0;
-}
-
-.topic-nav a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:8px 16px;
-  border-radius:999px;
-  background:#fff;
-  border:1px solid var(--border-mid);
-  color:var(--main-color) !important;
-  font-weight:700;
-  text-decoration:none !important;
-  box-shadow:0 3px 10px rgba(0,0,0,0.03);
-  transition:all 0.22s ease;
-}
-
-.topic-nav a:hover{
-  background:#fff7dd;
-  border-color:#d8c38d;
-  transform:translateY(-2px);
-  box-shadow:0 10px 20px rgba(0,0,0,0.08);
-}
-
-/* ===== right slim toc ===== */
-.pub-toc{
-  position:sticky;
-  top:100px;
-  padding-left:18px;
-}
-
-.pub-toc::before{
-  content:"";
-  position:absolute;
-  left:6px;
-  top:4px;
-  bottom:4px;
-  width:2px;
-  background:#eadfc9;
-  border-radius:999px;
-}
-
-.pub-toc-title{
-  margin:0 0 14px 0;
-  font-size:0.84rem;
-  font-weight:800;
-  color:var(--main-dark);
-  letter-spacing:0.04em;
-  text-transform:uppercase;
-}
-
-.pub-toc ul{
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-
-.pub-toc li{
-  position:relative;
-  margin:14px 0;
-}
-
-.pub-toc a{
-  position:relative;
-  display:block;
-  padding-left:18px;
-  color:#7a7a7a !important;
-  text-decoration:none !important;
-  font-size:0.9rem;
-  font-weight:600;
-  line-height:1.4;
-  transition:color 0.2s ease, transform 0.2s ease;
-}
-
-.pub-toc a::before{
-  content:"";
-  position:absolute;
-  left:-16px;
-  top:0.48em;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#d8ccb0;
-  border:2px solid #fff;
-  box-shadow:0 0 0 1px #d8ccb0;
-  transition:all 0.2s ease;
-}
-
-.pub-toc a:hover{
-  color:var(--main-color) !important;
-  transform:translateX(2px);
-}
-
-.pub-toc a:hover::before{
-  background:#c7a447;
-  box-shadow:0 0 0 1px #c7a447;
-}
-
-.pub-toc a.active{
-  color:var(--main-dark) !important;
-  font-weight:800;
-}
-
-.pub-toc a.active::before{
-  background:var(--main-color);
-  box-shadow:0 0 0 1px var(--main-color), 0 0 0 6px rgba(127,96,0,0.10);
-  transform:scale(1.05);
-}
-
-/* ===== Topic cards ===== */
-.pub-section{
-  background:var(--card-bg);
-  border:1px solid var(--border-light);
-  border-radius:22px;
-  padding:22px 24px 18px 24px;
-  margin-bottom:24px;
-  box-shadow:var(--shadow-soft);
-  transition:box-shadow 0.22s ease, transform 0.22s ease;
-  scroll-margin-top:90px;
-}
-
-.pub-section:hover{
-  box-shadow:var(--shadow-hover);
-  transform:translateY(-2px);
-}
-
-.pub-section h2{
-  margin:0 0 16px 0;
-  font-size:1.35rem;
-  font-weight:800;
-  color:var(--text-main);
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding-bottom:10px;
-  border-bottom:1px solid #efe8d9;
-}
-
-/* ===== Publication list ===== */
-.topic-list{
-  list-style:none;
-  padding-left:0;
-  margin:0;
-  counter-reset:pub-item;
-}
-
-.topic-list li{
-  counter-increment:pub-item;
-  position:relative;
-  margin-bottom:14px;
-  padding:13px 14px 13px 52px;
-  border-radius:14px;
-  background:#fffdfa;
-  border:1px solid #f1eadb;
-  line-height:1.7;
-  transition:all 0.2s ease;
-}
-
-.topic-list li:hover{
-  background:#fffaf0;
-  border-color:#e7d7ae;
-  box-shadow:0 8px 18px rgba(0,0,0,0.05);
-}
-
-.topic-list li::before{
-  content:"[" counter(pub-item) "]";
-  position:absolute;
-  left:14px;
-  top:13px;
-  font-weight:800;
-  color:var(--accent-blue);
-  font-size:0.98rem;
-}
-
-/* ===== text styles ===== */
-.page__content a{
-  color:var(--accent-blue);
-  text-decoration:none;
-  font-weight:600;
-}
-
-.page__content a:hover{
-  text-decoration:underline;
-}
-
-.page__content b,
-.page__content strong{
-  color:#111;
-}
-
-i{
-  color:#444;
-}
-
-/* ===== Badges ===== */
-.pub-badge{
-  display:inline-block;
-  margin-left:8px;
-  padding:2px 9px;
-  border-radius:999px;
-  font-size:0.78rem;
-  font-weight:700;
-  vertical-align:middle;
-  border:1px solid transparent;
-}
-
-.badge-award{
-  background:#fff3cd;
-  color:#8a6500;
-  border-color:#efd27a;
-}
-
-.badge-arxiv{
-  background:#eef5ff;
-  color:#275ea8;
-  border-color:#c9dcff;
-}
-
-.badge-journal{
-  background:#eefaf1;
-  color:#237245;
-  border-color:#cdebd7;
-}
-
-.badge-conf{
-  background:#f6f0ff;
-  color:#6c3fb1;
-  border-color:#dfcff8;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1100px){
-  .pub-layout{
-    grid-template-columns:1fr;
-  }
-
-  .pub-toc{
-    display:none;
-  }
-}
-
-@media (max-width:768px){
-  .pub-hero{
-    padding:24px 20px;
-  }
-
-  .pub-hero h1{
-    font-size:1.7rem;
-  }
-
-  .pub-section{
-    padding:18px 16px 14px 16px;
-  }
-
-  .topic-list li{
-    padding:12px 12px 12px 48px;
-  }
-
-  .topic-list li::before{
-    left:12px;
-  }
+.pub-layout { display: block; }
+.pub-main { min-width: 0; }
+.pub-hero { margin: 0 0 24px; padding: 0; border: 0; background: none; box-shadow: none; }
+.page__content .pub-hero h1 { margin: 0 0 20px; padding: 0; border: 0; color: #111; font-size: 32px; font-weight: 700; line-height: 1.2; }
+.pub-hero p { margin: 0; }
+.topic-nav { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 22px 0 32px; }
+.topic-nav a { font-size: 16px; }
+.pub-section { margin: 36px 0 0; padding: 0; border: 0; background: none; box-shadow: none; scroll-margin-top: 80px; }
+.page__content .pub-section h2 { margin: 0 0 20px; padding: 0 0 10px; border-bottom: 1px solid #e5e5e5; color: #111; font-size: 28px; font-weight: 700; line-height: 1.3; text-align: left; }
+.topic-list { list-style: none; padding: 0; margin: 0; counter-reset: publication; }
+.topic-list li { position: relative; counter-increment: publication; margin: 0 0 24px; padding: 0 0 0 40px; text-align: justify; text-justify: inter-word; }
+.topic-list li::before { content: "[" counter(publication) "]"; position: absolute; left: 0; top: 0; font-weight: 700; color: #111; }
+.page__content b, .page__content strong { color: #111; }
+.topic-list i { color: #444; }
+.pub-badge { display: inline; margin-left: 6px; padding: 0; border: 0; border-radius: 0; background: none; color: #666; font-size: 14px; font-weight: 400; white-space: nowrap; }
+.pub-badge::before { content: "["; }
+.pub-badge::after { content: "]"; }
+.badge-award { color: #111; font-weight: 700; }
+.preprint-link { font-size: 14px; white-space: nowrap; }
+@media (max-width: 767px) {
+  .page__content { font-size: 17px; line-height: 1.6; }
+  .page__content .pub-hero h1 { font-size: 28px; }
+  .page__content .pub-section h2 { font-size: 24px; }
+  .sidebar .author__avatar img { width: 75px; height: 75px; }
+  .topic-nav { gap: 10px 18px; }
+  .pub-section { margin-top: 30px; }
+  .topic-list li { padding-left: 30px; }
 }
 </style>
 
@@ -354,30 +53,44 @@ i{
   <div class="pub-main">
 
     <div class="pub-hero">
-      <h1>📝 Publications</h1>
+      <h1>Publications</h1>
       <p>
         This page summarizes my publications in near-field communications, intelligent antenna and surface, and symbiotic radio.
       </p>
     </div>
 
     <div class="topic-nav">
-      <a href="#near-field">📡 Near-field Communications (NFC)</a>
-      <a href="#intelligent-antenna">⚙ Intelligent Antenna and Surface (IAaS)</a>
-      <a href="#symbiotic-radio">🤝 Symbiotic Radio (SR)</a>
+      <a href="#near-field">Near-field Communications (NFC)</a>
+      <a href="#intelligent-antenna">Intelligent Antenna and Surface (IAaS)</a>
+      <a href="#symbiotic-radio">Symbiotic Radio (SR)</a>
     </div>
 
     <span class='anchor' id='publications'></span>
 
     <div class="pub-section" id="near-field">
-      <h2>📡 Near-Field Communications</h2>
+      <h2>Near-Field Communications</h2>
       <ul class="topic-list">
         <li>
          <b>Chao Zhou</b>, Changsheng You, Cong Zhou, Li Chen, Yi Gong, Chengwen Xing,
-          "<a href="https://arxiv.org/abs/2602.05666">Low-complexity Design for Beam Coverage in Near-field and Far-field: A Fourier Transform Approach</a>,"
-           <i>arXiv preprint arXiv:2602.05666</i>, 2026.
-          <span class="pub-badge badge-arxiv">arXiv</span>
+          "<a href="https://ieeexplore.ieee.org/document/11643502">Low-complexity Design for Beam Coverage in Near-field and Far-field: A Fourier Transform Approach</a>,"
+           <i>IEEE Transactions on Wireless Communications</i>, 2026.
+          <span class="pub-badge badge-journal">Journal</span> &middot; <a class="preprint-link" href="https://arxiv.org/abs/2602.05666">arXiv</a>
         </li>
-        
+
+        <li>
+          <b>Chao Zhou</b>, Changsheng You, Cong Zhou, Chengwen Xing, and Jianhua Zhang,
+          "<a href="https://ieeexplore.ieee.org/document/11519553">Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty</a>,"
+          <i>IEEE Transactions on Wireless Communications</i>, 2026.
+          <span class="pub-badge badge-journal">Journal</span> &middot; <a class="preprint-link" href="https://arxiv.org/abs/2601.13549">arXiv</a>
+        </li>
+
+        <li>
+          <b>Chao Zhou</b>, Changsheng You, Cong Zhou, Hai Lin, and Yi Gong,
+          "<a href="https://ieeexplore.ieee.org/document/11448582">MA-enhanced Mixed Near-field and Far-field Covert Communications</a>,"
+          <i>IEEE Transactions on Wireless Communications</i>, 2026.
+          <span class="pub-badge badge-journal">Journal</span> &middot; <a class="preprint-link" href="https://arxiv.org/abs/2511.08107">arXiv</a>
+        </li>
+
         <li>
           Qianglong Dai, Yong Zeng, Huizhi Wang, Changsheng You, <b>Chao Zhou</b>, et al.,
           "<a href="https://ieeexplore.ieee.org/document/11328117">A Tutorial on MIMO-OFDM ISAC: From Far-Field to Near-Field</a>,"
@@ -386,23 +99,9 @@ i{
         </li>
 
         <li>
-          <b>Chao Zhou</b>, Changsheng You, Cong Zhou, Chengwen Xing, and Jianhua Zhang,
-          "<a href="https://arxiv.org/abs/2601.13549">Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty</a>,"
-          <i>arXiv preprint arXiv:2601.13549</i>, 2026.
-          <span class="pub-badge badge-arxiv">arXiv</span>
-        </li>
-
-        <li>
           Liujia Yao, Changsheng You, Zixuan Huang, <b>Chao Zhou</b>, Zhaohui Yang, and Xiaoyang Li,
           "<a href="https://arxiv.org/abs/2601.10391">Codebook Design for Limited Feedback in Near-Field XL-MIMO Systems</a>,"
           <i>arXiv preprint arXiv:2601.10391</i>, 2026.
-          <span class="pub-badge badge-arxiv">arXiv</span>
-        </li>
-
-        <li>
-          <b>Chao Zhou</b>, Changsheng You, Cong Zhou, Hai Lin, and Yi Gong,
-          "<a href="https://arxiv.org/abs/2511.08107">MA-enhanced Mixed Near-field and Far-field Covert Communications</a>,"
-          <i>arXiv preprint arXiv:2511.08107</i>, 2025.
           <span class="pub-badge badge-arxiv">arXiv</span>
         </li>
 
@@ -430,7 +129,7 @@ i{
     </div>
 
     <div class="pub-section" id="intelligent-antenna">
-      <h2>⚙ Intelligent Antenna and Surface</h2>
+      <h2>Intelligent Antenna and Surface</h2>
       <ul class="topic-list">
         <li>
           Liujia Yao, Changsheng You, <b>Chao Zhou</b>, Beixiong Zheng, and Weidong Mei,
@@ -485,7 +184,7 @@ i{
     </div>
 
     <div class="pub-section" id="symbiotic-radio">
-      <h2>🤝 Symbiotic Radio</h2>
+      <h2>Symbiotic Radio</h2>
       <ul class="topic-list">
         <li>
           <b>Chao Zhou</b>, Bin Lyu, Changsheng You, and Dinh Thai Hoang,
@@ -533,40 +232,4 @@ i{
 
   </div>
 
-  <aside class="pub-toc">
-    <div class="pub-toc-title">On this page</div>
-    <ul>
-      <li><a href="#near-field" class="toc-link">📡 NFC</a></li>
-      <li><a href="#intelligent-antenna" class="toc-link">⚙ IAaS</a></li>
-      <li><a href="#symbiotic-radio" class="toc-link">🤝 SR</a></li>
-    </ul>
-  </aside>
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll(".pub-section[id]");
-  const tocLinks = document.querySelectorAll(".toc-link");
-
-  function setActiveLink() {
-    let currentId = "";
-
-    sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= 140 && rect.bottom >= 140) {
-        currentId = section.id;
-      }
-    });
-
-    tocLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + currentId) {
-        link.classList.add("active");
-      }
-    });
-  }
-
-  setActiveLink();
-  window.addEventListener("scroll", setActiveLink);
-});
-</script>
