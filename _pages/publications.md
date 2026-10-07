@@ -5,16 +5,16 @@ permalink: /Publications.html
 
 <style>
 :root{
-  --main-color:#7F6000;
-  --main-dark:#5f4700;
-  --main-light:#b88a00;
+  --main-color:#17365d;
+  --main-dark:#17365d;
+  --main-light:#245a91;
   --accent-blue:#1f5fae;
-  --soft-bg:#faf8f3;
+  --soft-bg:#f3f6fa;
   --card-bg:#ffffff;
-  --hero-bg-start:#fffdf8;
-  --hero-bg-end:#f7f1e6;
-  --border-light:#ece6d8;
-  --border-mid:#e4d7b7;
+  --hero-bg-start:#ffffff;
+  --hero-bg-end:#f3f6fa;
+  --border-light:#dde5ee;
+  --border-mid:#d2ddeb;
   --text-main:#222222;
   --text-soft:#555555;
   --shadow-soft:0 8px 24px rgba(0,0,0,0.05);
@@ -63,7 +63,7 @@ html{
   width:210px;
   height:210px;
   border-radius:50%;
-  background:radial-gradient(circle, rgba(184,138,0,0.10) 0%, rgba(184,138,0,0.03) 55%, rgba(184,138,0,0) 72%);
+  background:radial-gradient(circle, rgba(36,90,145,0.10) 0%, rgba(36,90,145,0.03) 55%, rgba(36,90,145,0) 72%);
   pointer-events:none;
 }
 
@@ -104,8 +104,8 @@ html{
 }
 
 .topic-nav a:hover{
-  background:#fff7dd;
-  border-color:#d8c38d;
+  background:#edf3fa;
+  border-color:#a7bed8;
   transform:translateY(-2px);
   box-shadow:0 10px 20px rgba(0,0,0,0.08);
 }
@@ -124,7 +124,7 @@ html{
   top:4px;
   bottom:4px;
   width:2px;
-  background:#eadfc9;
+  background:#dde5ee;
   border-radius:999px;
 }
 
@@ -168,9 +168,9 @@ html{
   width:10px;
   height:10px;
   border-radius:50%;
-  background:#d8ccb0;
+  background:#b6c6d9;
   border:2px solid #fff;
-  box-shadow:0 0 0 1px #d8ccb0;
+  box-shadow:0 0 0 1px #b6c6d9;
   transition:all 0.2s ease;
 }
 
@@ -180,8 +180,8 @@ html{
 }
 
 .pub-toc a:hover::before{
-  background:#c7a447;
-  box-shadow:0 0 0 1px #c7a447;
+  background:#245a91;
+  box-shadow:0 0 0 1px #245a91;
 }
 
 .pub-toc a.active{
@@ -191,7 +191,7 @@ html{
 
 .pub-toc a.active::before{
   background:var(--main-color);
-  box-shadow:0 0 0 1px var(--main-color), 0 0 0 6px rgba(127,96,0,0.10);
+  box-shadow:0 0 0 1px var(--main-color), 0 0 0 6px rgba(36,90,145,0.10);
   transform:scale(1.05);
 }
 
@@ -221,7 +221,7 @@ html{
   align-items:center;
   gap:10px;
   padding-bottom:10px;
-  border-bottom:1px solid #efe8d9;
+  border-bottom:1px solid #dde5ee;
 }
 
 /* ===== Publication list ===== */
@@ -238,15 +238,15 @@ html{
   margin-bottom:14px;
   padding:13px 14px 13px 52px;
   border-radius:14px;
-  background:#fffdfa;
-  border:1px solid #f1eadb;
+  background:#fbfcfe;
+  border:1px solid #e4ebf3;
   line-height:1.7;
   transition:all 0.2s ease;
 }
 
 .topic-list li:hover{
-  background:#fffaf0;
-  border-color:#e7d7ae;
+  background:#f3f6fa;
+  border-color:#d2ddeb;
   box-shadow:0 8px 18px rgba(0,0,0,0.05);
 }
 

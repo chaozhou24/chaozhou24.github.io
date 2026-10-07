@@ -8,445 +8,33 @@ redirect_from:
   - /about.html
 ---
 
-<style>
-:root{
-  --main-color:#7F6000;
-  --main-dark:#5f4700;
-  --main-light:#b08a1a;
-  --soft-bg:#faf8f3;
-  --card-bg:#ffffff;
-  --border-light:#ece6d8;
-  --border-mid:#e2d6b8;
-  --text-main:#222222;
-  --text-soft:#555555;
-  --shadow-soft:0 8px 24px rgba(0,0,0,0.06);
-  --shadow-hover:0 14px 32px rgba(0,0,0,0.10);
-  --radius-md:18px;
-}
+<div class="academic-home">
+  <header class="hero-card">
+    <p class="home-eyebrow">Wireless communications · Academic homepage</p>
+    <h1 class="hero-title">Chao Zhou <span>周超</span></h1>
+    <p class="hero-affiliation">Ph.D. candidate · Southern University of Science and Technology</p>
+    <p class="hero-intro">
+      I am a Ph.D. candidate at Southern University of Science and Technology (SUSTech),
+      advised by Prof. <a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html" target="_blank" rel="noopener noreferrer">Changsheng You</a>.
+      I received my M.S. degree from Nanjing University of Posts and Telecommunications,
+      under the supervision of Prof. <a href="https://scholar.google.com/citations?user=0C3BRkEAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener noreferrer">Bin Lyu</a>.
+    </p>
+    <p class="hero-intro">
+      My research focuses on near-field communications, intelligent antennas and surfaces,
+      and symbiotic radio. I have published several papers in leading international
+      communications journals and conferences.
+    </p>
+    <p class="hero-contact">Interested in collaboration? Feel free to <a href="mailto:zhouchao2024@mail.sustech.edu.cn">get in touch</a>.</p>
+    <nav class="home-links" aria-label="Academic profile links">
+      <a class="home-btn home-btn--primary" href="/Publications.html">View publications <span aria-hidden="true">↗</span></a>
+      <a class="home-btn" href="https://scholar.google.com/citations?user=o5Sqh2MAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+      <a class="home-btn" href="mailto:zhouchao2024@mail.sustech.edu.cn">Email me</a>
+    </nav>
+  </header>
 
-/* ===== Global Text Style ===== */
-.page__content,
-.page__content *{
-  font-family:"Times New Roman", Times, serif !important;
-}
-
-.page__content{
-  font-size:17px;
-  line-height:1.72;
-  color:var(--text-main);
-}
-
-.page__content p,
-.page__content li{
-  text-align:justify;
-  text-justify:inter-word;
-}
-
-.page__content a{
-  color:#1f5fae;
-  text-decoration:underline;
-}
-
-.page__content a:hover{
-  color:#0b3f88;
-  text-decoration:underline;
-}
-
-/* ===== Plain Intro: Largest Text Area ===== */
-.hero-card{
-  background:none;
-  border:none;
-  border-radius:0;
-  padding:0;
-  margin:0 0 22px 0;
-  box-shadow:none;
-  overflow:visible;
-}
-
-.hero-card::after{
-  display:none;
-}
-
-.hero-card p{
-  margin:0 0 18px 0;
-  font-size:20px;
-  line-height:1.85;
-  color:var(--text-main);
-  text-align:justify;
-  text-justify:inter-word;
-}
-
-.hero-card .hello-line{
-  font-size:20px;
-  line-height:1.6;
-  margin-bottom:20px;
-  text-align:left;
-}
-
-.hero-email{
-  font-weight:normal;
-  color:var(--text-main);
-}
-
-/* ===== Refined Text Navigation ===== */
-.home-links{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:26px;
-  margin:12px 0 36px 0;
-  padding:6px 0 4px 0;
-  text-align:left;
-}
-
-.home-btn{
-  position:relative;
-  display:inline-flex;
-  align-items:center;
-  padding:2px 0 5px 0;
-  color:var(--main-dark) !important;
-  font-size:18px;
-  font-weight:700;
-  letter-spacing:0.2px;
-  text-decoration:none !important;
-  border:none;
-  background:none;
-  box-shadow:none;
-  transition:color 0.22s ease, transform 0.22s ease;
-}
-
-/* 默认完整展开的渐变下划线 */
-.home-btn::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:100%;
-  height:2px;
-  border-radius:999px;
-  background:linear-gradient(90deg, var(--main-color), var(--main-light));
-  opacity:0.9;
-}
-
-.home-btn:hover{
-  color:var(--main-color) !important;
-  text-decoration:none !important;
-  transform:translateY(-1px);
-}
-
-.home-btn:hover::after{
-  opacity:1;
-}
-
-/* ===== Section Title: No Left Vertical Bar ===== */
-.section-title{
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-size:25px;
-  font-weight:800;
-  color:var(--text-main);
-  margin:40px 0 20px 0;
-  padding:0 0 9px 0;
-  border-left:none;
-  text-align:left;
-}
-
-.section-title::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:92px;
-  height:2px;
-  border-radius:999px;
-  background:linear-gradient(
-    90deg,
-    var(--main-color),
-    var(--main-light),
-    rgba(176,138,26,0.15)
-  );
-}
-
-/* ===== Research Interests: Clean Structured List ===== */
-.research-list{
-  margin:0;
-  padding:0;
-  list-style:none;
-  border-top:1px solid #eee6d8;
-}
-
-.research-item{
-  display:grid;
-  grid-template-columns:58px 1fr;
-  column-gap:16px;
-  align-items:start;
-  padding:18px 0;
-  border-bottom:1px solid #eee6d8;
-  transition:transform 0.22s ease;
-}
-
-.research-item:hover{
-  transform:translateX(3px);
-}
-
-.research-index{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:42px;
-  height:28px;
-  border-left:4px solid var(--main-color);
-  color:var(--main-dark);
-  font-size:17px;
-  font-weight:800;
-  letter-spacing:0.5px;
-  text-align:left;
-}
-
-.research-content h3{
-  margin:0 0 7px 0;
-  color:var(--main-color);
-  font-size:20px;
-  line-height:1.35;
-  font-weight:800;
-  text-align:left;
-}
-
-.research-content p{
-  margin:0;
-  color:var(--text-soft);
-  font-size:18px;
-  line-height:1.7;
-  text-align:justify;
-  text-justify:inter-word;
-}
-
-.research-keyword{
-  font-weight:700;
-  color:#333333;
-}
-
-/* ===== News Timeline ===== */
-.news-timeline{
-  position:relative;
-  margin-top:4px;
-  padding-left:26px;
-  border-left:3px solid #eadfca;
-}
-
-.news-item{
-  position:relative;
-  margin-bottom:22px;
-  padding:0 0 0 10px;
-}
-
-.news-item::before{
-  content:"";
-  position:absolute;
-  left:-35px;
-  top:8px;
-  width:14px;
-  height:14px;
-  border-radius:50%;
-  background:var(--main-color);
-  box-shadow:0 0 0 4px #f7f0df;
-}
-
-.news-date{
-  display:inline-block;
-  margin-right:8px;
-  font-weight:800;
-  color:var(--main-color);
-}
-
-.news-item p{
-  margin:0;
-  color:var(--text-main);
-  font-size:18px;
-  line-height:1.72;
-  text-align:justify;
-  text-justify:inter-word;
-}
-
-/* ===== Academic Services: Minimal Accent List, No Circle Timeline ===== */
-.service-block{
-  background:none;
-  border:none;
-  box-shadow:none;
-  padding:0;
-  margin:0;
-}
-
-.service-list{
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-
-.service-item{
-  position:relative;
-  margin:0;
-  padding:0 0 17px 18px;
-  background:none;
-  border:none;
-  box-shadow:none;
-  transition:transform 0.22s ease;
-}
-
-.service-item:not(:last-child){
-  margin-bottom:16px;
-  border-bottom:1px solid #eee8dc;
-}
-
-.service-item::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:7px;
-  width:4px;
-  height:calc(100% - 24px);
-  min-height:24px;
-  border-radius:999px;
-  background:linear-gradient(180deg, var(--main-color), var(--main-light));
-}
-
-.service-item:hover{
-  transform:translateX(3px);
-}
-
-.service-role{
-  display:inline-block;
-  margin-right:8px;
-  color:#333333;
-  font-size:18px;
-  font-weight:800;
-  text-decoration:underline;
-  text-decoration-color:var(--main-light);
-  text-decoration-thickness:1.5px;
-  text-underline-offset:4px;
-}
-
-.service-venue{
-  font-size:18px;
-  font-style:italic;
-  color:#4a4a4a;
-}
-
-.service-detail{
-  font-size:18px;
-  color:#4f4f4f;
-  line-height:1.72;
-  text-align:justify;
-  text-justify:inter-word;
-}
-
-.service-abbr{
-  font-weight:700;
-  color:#333333;
-}
-
-.service-muted{
-  color:var(--main-dark);
-  font-weight:700;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px){
-  .page__content{
-    font-size:16px;
-  }
-
-  .hero-card p{
-    font-size:18px;
-    line-height:1.78;
-  }
-
-  .hero-card .hello-line{
-    font-size:18px;
-  }
-
-  .section-title{
-    font-size:22px;
-  }
-
-  .section-title::after{
-    width:78px;
-  }
-
-  .home-links{
-    gap:16px;
-  }
-
-  .home-btn{
-    font-size:17px;
-  }
-
-  .research-item{
-    grid-template-columns:46px 1fr;
-    column-gap:12px;
-  }
-
-  .research-index{
-    width:36px;
-    font-size:16px;
-  }
-
-  .research-content h3{
-    font-size:19px;
-  }
-
-  .research-content p,
-  .news-item p,
-  .service-role,
-  .service-venue,
-  .service-detail{
-    font-size:17px;
-  }
-
-  .service-item{
-    padding-left:16px;
-  }
-}
-</style>
-
-<div class="hero-card">
-
-  <p class="hello-line">
-    Hello 👋
-  </p>
-
-  <p>
-    I am a Ph.D. candidate at Southern University of Science and Technology (SUSTech),
-    advised by Prof.
-    <a href="https://www.sustech.edu.cn/en/faculties/changshengyou.html" target="_blank">
-      Changsheng You
-    </a>.
-    I received the M.S. degree from Nanjing University of Posts and Telecommunications,
-    under the supervision of Prof.
-    <a href="https://scholar.google.com/citations?user=0C3BRkEAAAAJ&hl=zh-CN&oi=ao" target="_blank">
-      Bin Lyu
-    </a>.
-    My research interests include Near-Field Communications, Intelligent Antenna and Surface,
-    and Symbiotic Radio. I have published several papers in top international communication
-    journals and conferences. If you are interested in collaboration, please contact me via email:
-    <span class="hero-email">zhouchao2024@mail.sustech.edu.cn</span>
-  </p>
-
-</div>
-
-<div class="home-links">
-  <a class="home-btn" href="mailto:zhouchao2024@mail.sustech.edu.cn">Email</a>
-  <a class="home-btn" href="https://scholar.google.com/citations?user=o5Sqh2MAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a>
-  <a class="home-btn" href="#news">News</a>
-  <a class="home-btn" href="/Publications.html">Publications</a>
-  <a class="home-btn" href="/Photos.html">Photos</a>
-</div>
-
-<div class="section-title">📖 Research Interests</div>
-
-<ul class="research-list">
+  <section class="home-section" id="research" aria-labelledby="research-heading">
+    <div class="section-heading"><h2 class="section-title" id="research-heading">Research interests</h2><span>Three connected directions</span></div>
+    <ul class="research-list">
 
   <li class="research-item">
     <div class="research-index">01</div>
@@ -481,112 +69,124 @@ redirect_from:
   </li>
 
 </ul>
+  </section>
 
-<span id="news"></span>
-
-<div class="section-title">🔥 News</div>
-
-<div class="news-timeline">
-
+  <section class="home-section" id="news" aria-labelledby="news-heading">
+    <div class="section-heading"><h2 class="section-title" id="news-heading">Recent news</h2><span>Research &amp; publications</span></div>
+    <div class="news-timeline">
   <div class="news-item">
     <p>
       <span class="news-date">2026.08</span>
+      <span class="news-text">
       Our paper
-      <a href="https://ieeexplore.ieee.org/document/11643502" target="_blank">
+      <a href="https://ieeexplore.ieee.org/document/11643502" target="_blank" rel="noopener noreferrer">
         Low-complexity Design for Beam Coverage in Near-field and Far-field: A Fourier Transform Approach
       </a>
-      was accepted by IEEE Transactions on Wireless Communications.
+      was accepted by IEEE Transactions on Wireless Communications.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2026.08</span>
-      Three papers have been accepted by the IEEE Global Communications Conference (GLOBECOM) 2026.
+      <span class="news-text">
+      Three papers have been accepted by the IEEE Global Communications Conference (GLOBECOM) 2026.</span>
     </p>
   </div>
-
 
   <div class="news-item">
     <p>
       <span class="news-date">2026.06</span>
+      <span class="news-text">
       Our paper
-      <a href="https://arxiv.org/abs/2606.25629" target="_blank">
+      <a href="https://arxiv.org/abs/2606.25629" target="_blank" rel="noopener noreferrer">
         Event-Adaptive Motion Planning with Distilled Vision-Language Model in Safety-Critical Situations
       </a>
-      was accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.
+      was accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2026.05</span>
+      <span class="news-text">
       Our paper
-      <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank">
+      <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank" rel="noopener noreferrer">
         Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty
       </a>
-      was accepted by IEEE Transactions on Wireless Communications.
+      was accepted by IEEE Transactions on Wireless Communications.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2026.03</span>
+      <span class="news-text">
       Our paper
-      <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank">
+      <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank" rel="noopener noreferrer">
         MA-enhanced Mixed Near-field and Far-field Covert Communications
       </a>
-      was accepted by IEEE Transactions on Wireless Communications.
+      was accepted by IEEE Transactions on Wireless Communications.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2026.01</span>
-      Three papers have been accepted by the IEEE International Conference on Communications (ICC) 2026.
+      <span class="news-text">
+      Three papers have been accepted by the IEEE International Conference on Communications (ICC) 2026.</span>
     </p>
   </div>
+    </div>
+  </section>
 
+  <section class="home-section" id="honors" aria-labelledby="honors-heading">
+    <div class="section-heading"><h2 class="section-title" id="honors-heading">Honors &amp; awards</h2><span>Selected recognitions</span></div>
+    <div class="honors-list">
   <div class="news-item">
     <p>
       <span class="news-date">2024.11</span>
+      <span class="news-text">
       I received the IEEE WCSP Best Paper Award for paper
-      <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Channel+Estimation+for+XL-IRS+Assisted+Wireless+Systems+with+Double-sided+Visibility+Regions&btnG=" target="_blank">
+      <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Channel+Estimation+for+XL-IRS+Assisted+Wireless+Systems+with+Double-sided+Visibility+Regions&btnG=" target="_blank" rel="noopener noreferrer">
         Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions
-      </a>.
+      </a>.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2024.10</span>
-      I received China Institute of Communications Master's Thesis Incentive Program (Only 7 recipients nationwide), 2024.
+      <span class="news-text">
+      I received China Institute of Communications Master's Thesis Incentive Program (Only 7 recipients nationwide), 2024.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2023.10</span>
-      I received the National Scholarship for Master's Students (Top 2%), 2023.
+      <span class="news-text">
+      I received the National Scholarship for Master's Students (Top 2%), 2023.</span>
     </p>
   </div>
 
   <div class="news-item">
     <p>
       <span class="news-date">2022.10</span>
-      I received the National Scholarship for Master's Students (Top 2%), 2022.
+      <span class="news-text">
+      I received the National Scholarship for Master's Students (Top 2%), 2022.</span>
     </p>
   </div>
+    </div>
+  </section>
 
-</div>
-
-<div class="section-title">📄 Academic Services</div>
-
-<div class="service-block">
-  <ul class="service-list">
+  <section class="home-section" id="services" aria-labelledby="services-heading">
+    <div class="section-heading"><h2 class="section-title" id="services-heading">Academic service</h2><span>Community contributions</span></div>
+    <ul class="service-list">
 
     <li class="service-item">
       <span class="service-role">Reviewer for Journals</span>
+      <div class="service-text">
       <span class="service-detail">
         <span class="service-muted">IEEE journals:</span>
         <span class="service-abbr">JSAC</span>,
@@ -602,11 +202,12 @@ redirect_from:
         <span class="service-abbr">CL</span>;
         <span class="service-muted">others:</span>
         <span class="service-abbr">China Commun.</span>
-      </span>
+      </span></div>
     </li>
 
     <li class="service-item">
       <span class="service-role">Reviewer for Conferences</span>
+      <div class="service-text">
       <span class="service-detail">
         <span class="service-abbr">IEEE ICC</span> 2025/2026,
         <span class="service-abbr">IEEE WCNC</span> 2024/2026,
@@ -614,18 +215,21 @@ redirect_from:
         <span class="service-abbr">IEEE/CIC ICCC</span> 2025,
         <span class="service-abbr">IEEE PIMRC</span> 2024,
         and <span class="service-abbr">WCSP</span> 2024.
-      </span>
+      </span></div>
     </li>
 
     <li class="service-item">
       <span class="service-role">Special Session Co-Chair</span>
+      <div class="service-text">
       <span class="service-venue">
         Extremely Large-Scale MIMO for Near-Field Communication and Sensing
       </span>
       <span class="service-detail">
         at <span class="service-abbr">IEEE ISWCS</span> 2026.
-      </span>
+      </span></div>
     </li>
 
   </ul>
+  </section>
+  <footer class="home-footer">Chao Zhou · SUSTech · <a href="mailto:zhouchao2024@mail.sustech.edu.cn">zhouchao2024@mail.sustech.edu.cn</a></footer>
 </div>
