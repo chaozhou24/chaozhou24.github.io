@@ -95,7 +95,7 @@ redirect_from:
     <time class="news-date" datetime="2026-08">2026.08</time>
     <p>
       Our paper
-      <a href="https://ieeexplore.ieee.org/document/11643502" target="_blank" rel="noopener noreferrer">
+      <a href="https://doi.org/10.1109/TWC.2026.3717922" target="_blank" rel="noopener noreferrer">
         Low-complexity Design for Beam Coverage in Near-field and Far-field: A Fourier Transform Approach
       </a>
       was accepted by IEEE Transactions on Wireless Communications.
@@ -128,7 +128,7 @@ redirect_from:
     <time class="news-date" datetime="2026-05">2026.05</time>
     <p>
       Our paper
-      <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank" rel="noopener noreferrer">
+      <a href="https://doi.org/10.1109/TWC.2026.3690730" target="_blank" rel="noopener noreferrer">
         Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty
       </a>
       was accepted by IEEE Transactions on Wireless Communications.
@@ -140,7 +140,7 @@ redirect_from:
     <time class="news-date" datetime="2026-03">2026.03</time>
     <p>
       Our paper
-      <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank" rel="noopener noreferrer">
+      <a href="https://doi.org/10.1109/TWC.2026.3673378" target="_blank" rel="noopener noreferrer">
         MA-enhanced Mixed Near-field and Far-field Covert Communications
       </a>
       was accepted by IEEE Transactions on Wireless Communications.
@@ -160,7 +160,7 @@ redirect_from:
     <time class="news-date" datetime="2024-11">2024.11</time>
     <p>
       I received the IEEE WCSP Best Paper Award for paper
-      <a href="https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C5&q=Channel+Estimation+for+XL-IRS+Assisted+Wireless+Systems+with+Double-sided+Visibility+Regions&btnG=" target="_blank" rel="noopener noreferrer">
+      <a href="https://doi.org/10.1109/WCSP62071.2024.10827219" target="_blank" rel="noopener noreferrer">
         Channel Estimation for XL-IRS Assisted Wireless Systems with Double-sided Visibility Regions
       </a>.
 
@@ -197,19 +197,19 @@ redirect_from:
 
 <ol class="selected-list">
   <li>
-    <a class="publication-title" href="https://ieeexplore.ieee.org/document/11643502" target="_blank" rel="noopener noreferrer">Low-complexity Design for Beam Coverage in Near-field and Far-field: A Fourier Transform Approach</a>
+    <a class="publication-title" href="https://doi.org/10.1109/TWC.2026.3717922" target="_blank" rel="noopener noreferrer">Low-complexity Design for Beam Coverage in Near-field and Far-field: A Fourier Transform Approach</a>
     <p class="publication-authors"><strong>Chao Zhou</strong>, Changsheng You, Cong Zhou, Li Chen, Yi Gong, and Chengwen Xing.</p>
-    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, 2026. &middot; <a href="https://ieeexplore.ieee.org/document/11643502" target="_blank" rel="noopener noreferrer">Paper</a> &middot; <a href="https://arxiv.org/abs/2602.05666" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, vol. 25, pp. 21595–21610, 2026. &middot; <a href="https://doi.org/10.1109/TWC.2026.3717922" target="_blank" rel="noopener noreferrer">Paper</a></p>
   </li>
   <li>
-    <a class="publication-title" href="https://ieeexplore.ieee.org/document/11519553" target="_blank" rel="noopener noreferrer">Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty</a>
+    <a class="publication-title" href="https://doi.org/10.1109/TWC.2026.3690730" target="_blank" rel="noopener noreferrer">Near-field Physical Layer Security: Robust Beamforming under Location Uncertainty</a>
     <p class="publication-authors"><strong>Chao Zhou</strong>, Changsheng You, Cong Zhou, Chengwen Xing, and Jianhua Zhang.</p>
-    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, 2026. &middot; <a href="https://ieeexplore.ieee.org/document/11519553" target="_blank" rel="noopener noreferrer">Paper</a> &middot; <a href="https://arxiv.org/abs/2601.13549" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, vol. 25, pp. 17384–17398, 2026. &middot; <a href="https://doi.org/10.1109/TWC.2026.3690730" target="_blank" rel="noopener noreferrer">Paper</a></p>
   </li>
   <li>
-    <a class="publication-title" href="https://ieeexplore.ieee.org/document/11448582" target="_blank" rel="noopener noreferrer">MA-enhanced Mixed Near-field and Far-field Covert Communications</a>
+    <a class="publication-title" href="https://doi.org/10.1109/TWC.2026.3673378" target="_blank" rel="noopener noreferrer">MA-enhanced Mixed Near-field and Far-field Covert Communications</a>
     <p class="publication-authors"><strong>Chao Zhou</strong>, Changsheng You, Cong Zhou, Hai Lin, and Yi Gong.</p>
-    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, 2026. &middot; <a href="https://ieeexplore.ieee.org/document/11448582" target="_blank" rel="noopener noreferrer">Paper</a> &middot; <a href="https://arxiv.org/abs/2511.08107" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+    <p class="publication-meta"><i>IEEE Transactions on Wireless Communications</i>, vol. 25, pp. 14037–14052, 2026. &middot; <a href="https://doi.org/10.1109/TWC.2026.3673378" target="_blank" rel="noopener noreferrer">Paper</a></p>
   </li>
 </ol>
 <p class="all-publications"><a href="/Publications.html">View all publications &rarr;</a></p>
