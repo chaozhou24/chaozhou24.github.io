@@ -1,7 +1,7 @@
-.qa-page { max-width: 960px; }
+.qa-page { width: 100%; min-width: 0; }
 .qa-header { margin-bottom: 28px; }
 .qa-page .qa-eyebrow { margin: 0 0 12px; color: #666; font: 700 12px/1.5 "Segoe UI", Arial, sans-serif; letter-spacing: .16em; }
-.qa-header h1 { margin: 0 0 12px; color: #111; font-size: 42px; line-height: 1.15; border: 0; }
+.qa-header h1 { margin: 0 0 20px; padding: 0; color: #111; font-size: 32px; font-weight: 700; line-height: 1.2; border: 0; }
 .qa-header > p:last-child { margin: 0; color: #666; font-size: 21px; }
 .qa-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; margin: 26px 0 34px; font-size: 16px; }
 .qa-page a.qa-primary, .qa-page a.qa-primary:visited { display: inline-flex; align-items: center; gap: 18px; padding: 10px 18px; border: 1px solid #111; border-radius: 5px; background: #111; color: #fff; text-decoration: none; }
@@ -24,7 +24,7 @@
 .qa-page [hidden] { display: none !important; }
 .qa-page .giscus-frame { width: 100%; }
 @media (max-width: 767px) {
-  .qa-header h1 { font-size: 34px; }
+  .qa-header h1 { font-size: 28px; }
   .qa-header > p:last-child { font-size: 19px; }
   .qa-page .qa-guide { grid-template-columns: 1fr; gap: 18px; margin-bottom: 28px; }
   .qa-discussion-heading h2 { font-size: 24px; }

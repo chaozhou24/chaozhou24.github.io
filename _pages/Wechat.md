@@ -3,7 +3,7 @@ title: "Q&A"
 permalink: /Wechat.html
 ---
 
-<link rel="stylesheet" href="/assets/css/qa.css">
+<link rel="stylesheet" href="{{ "/assets/css/qa.css" | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
 
 <div class="qa-page">
   <header class="qa-header">
