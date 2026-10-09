@@ -38,7 +38,7 @@ permalink: /Publications.html
 
     <div class="pub-hero">
       <h1>Publications</h1>
-      <p>My publications and preprints, grouped by research topic. Published papers link to the publisher; preprints link to arXiv.</p>
+      <p>My publications and preprints, grouped by research topic.</p>
     </div>
 
     <div class="topic-nav">
