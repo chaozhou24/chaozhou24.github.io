@@ -57,10 +57,10 @@ body .photo-caption { color: #555; }
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
-  #main { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 48px; align-items: start; }
+  #main { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 60px; align-items: start; }
   #main::before, #main::after { display: none; }
   #main > .sidebar { float: none; width: auto; min-width: 0; margin: 0; padding: 0; }
   #main > .page { float: none; width: 100%; min-width: 0; max-width: none; margin: 0; padding: 0; }
@@ -78,7 +78,7 @@ body .page__content .page-directory a:hover {
 }
 .directory-main .section-title, .directory-main > span[id] { scroll-margin-top: 80px; }
 @media (min-width: 1280px) {
-  .directory-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; column-gap: 36px; align-items: start; }
+  .directory-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; column-gap: 60px; align-items: start; }
   .directory-main { grid-column: 1; grid-row: 1; }
   body .page__content .page-directory {
     grid-column: 2; grid-row: 1; position: sticky; top: 80px;
