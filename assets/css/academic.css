@@ -98,7 +98,7 @@ body .page__content .page-directory a:hover {
 .masthead #site-nav a,
 .masthead #site-nav a:visited {
   color: #111; font-family: "Times New Roman", Times, serif;
-  font-size: 28px; font-weight: 700; line-height: 1.2;
+  font-size: 20px; font-weight: 700; line-height: 1.2;
 }
 .masthead .masthead__menu-item--lg { padding-right: 0; }
 .masthead #site-nav a[aria-current="page"],
@@ -112,7 +112,7 @@ body .page__content .page-directory a:hover {
   transform: translateY(-50%); pointer-events: none;
 }
 @media (max-width: 767px) {
-  .masthead #site-nav a, .masthead #site-nav a:visited { font-size: 28px; }
+  .masthead #site-nav a, .masthead #site-nav a:visited { font-size: 20px; }
   .masthead #site-nav .visible-links > li + li::after { height: 24px; }
   .masthead #site-nav .visible-links > li:nth-child(2)::after { display: none; }
 }
