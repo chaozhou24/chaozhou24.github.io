@@ -103,10 +103,10 @@ redirect_from:
     <p>Backscatter communication conveys information by modulating and reflecting an incident radio signal. In symbiotic radio, the secondary transmission uses the primary signal as its carrier, and the primary and secondary links operate together.</p>
     <p><strong>My focus:</strong> My work studies <a href="https://doi.org/10.1109/TCCN.2023.3306367">transmit-power minimization for STAR-RIS-assisted symbiotic radio</a> by designing active beamforming and surface transmission/reflection coefficients; <a href="https://doi.org/10.1109/TWC.2023.3265770">robust secure multicast transmission with an active RIS</a> under imperfect eavesdropper channel information; and <a href="https://doi.org/10.1109/LWC.2024.3443460">movable-antenna-enabled symbiotic radio</a> to improve primary and secondary rates through antenna positioning.</p>
     <figure class="research-figure">
-      <a class="research-image-link" href="/images/research/symbiotic-radio-en.png?v=20261009-white" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution symbiotic radio illustration">
-        <img src="/images/research/symbiotic-radio-en.png?v=20261009-white" width="1448" height="1086" loading="lazy" decoding="async" alt="English RIS-assisted symbiotic radio diagram showing a primary transmitter, a reconfigurable intelligent surface, a primary user and a secondary user, with five labeled signal paths.">
+      <a class="research-image-link" href="/images/research/symbiotic-radio-en.png?v=20261009-scene" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution symbiotic radio illustration">
+        <img src="/images/research/symbiotic-radio-en.png?v=20261009-scene" width="1672" height="941" loading="lazy" decoding="async" alt="White-background isometric campus scene showing a rooftop primary transmitter, a wall-mounted RIS, a primary phone user and a secondary gateway, with three direct primary links and two RIS-assisted primary-plus-backscatter links.">
       </a>
-      <figcaption>Conceptual RIS-assisted symbiotic radio links showing primary transmission and secondary backscatter; illustration only.</figcaption>
+      <figcaption>Conceptual campus scenario for RIS-assisted symbiotic radio: direct primary signals and RIS-assisted primary-plus-backscatter signals; illustration only.</figcaption>
     </figure>
   </section>
 </div>
