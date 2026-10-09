@@ -92,3 +92,14 @@ body .page__content .page-directory a:hover {
   .directory-layout .hero-card, .directory-layout .photo-hero { order: -2; margin-bottom: 0; }
   body .page__content .page-directory { order: -1; margin: 22px 0 32px; }
 }
+
+/* Give the main navigation the same size as page titles. */
+.masthead .greedy-nav a { font-size: 32px; line-height: 1.2; }
+.masthead .masthead__menu-item--lg { padding-right: 0; }
+.masthead .greedy-nav a[aria-current="page"],
+.masthead .greedy-nav a[aria-current="page"]:visited,
+.masthead .greedy-nav a[aria-current="page"]:hover { color: #1f5fae; }
+.masthead .greedy-nav .visible-links a[aria-current="page"]::before { background: #1f5fae; }
+@media (max-width: 767px) {
+  .masthead .greedy-nav a { font-size: 28px; }
+}
