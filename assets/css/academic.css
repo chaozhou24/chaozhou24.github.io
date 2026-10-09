@@ -48,16 +48,16 @@ body .photo-caption { color: #555; }
   body .page__content .photo-section h2 { font-size: 24px; }
 }
 
-/* Align all desktop pages to a shared, smaller left margin. */
+/* Shared desktop width with equal space on both sides. */
 @media (min-width: 925px) {
   #main, .masthead .masthead__inner-wrap {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1720px;
-    margin-left: 0;
+    max-width: 1920px;
+    margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 32px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
   #main { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 48px; align-items: start; }
   #main::before, #main::after { display: none; }
