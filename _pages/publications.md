@@ -27,12 +27,9 @@ main_class: publications-container
 .preprint-link { font-size: 14px; white-space: nowrap; }
 /* Use the desktop's right-hand space for the research-topic directory. */
 @media (min-width: 1280px) {
-  #main.publications-container { max-width: 1600px; }
-  .publications-container > .sidebar { width: 200px; }
-  .publications-container > .page { width: calc(100% - 230px); padding-left: 32px; }
   .pub-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; column-gap: 36px; align-items: start; }
   .pub-main { grid-column: 1; grid-row: 1; }
-  .topic-nav { grid-column: 2; grid-row: 1; position: sticky; top: 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; margin: 0; padding: 4px 0 4px 20px; border-left: 1px solid #e5e5e5; max-height: calc(100vh - 64px); overflow-y: auto; }
+  .topic-nav { grid-column: 2; grid-row: 1; position: sticky; top: 80px; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; margin: 0; padding: 4px 0 4px 20px; border-left: 1px solid #e5e5e5; max-height: calc(100vh - 112px); overflow-y: auto; }
   .topic-nav a { display: block; line-height: 1.5; text-align: left; }
 }
 @media (max-width: 1279px) {
