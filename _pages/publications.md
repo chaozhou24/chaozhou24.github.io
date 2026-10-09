@@ -1,6 +1,7 @@
 ---
 title: "Publications"
 permalink: /Publications.html
+main_class: publications-container
 ---
 
 <style>
@@ -24,6 +25,22 @@ permalink: /Publications.html
 .pub-badge::after { content: "]"; }
 .badge-award { color: #111; font-weight: 700; }
 .preprint-link { font-size: 14px; white-space: nowrap; }
+/* Use the desktop's right-hand space for the research-topic directory. */
+@media (min-width: 1280px) {
+  #main.publications-container { max-width: 1600px; }
+  .publications-container > .sidebar { width: 200px; }
+  .publications-container > .page { width: calc(100% - 230px); padding-left: 32px; }
+  .pub-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; column-gap: 36px; align-items: start; }
+  .pub-main { grid-column: 1; grid-row: 1; }
+  .topic-nav { grid-column: 2; grid-row: 1; position: sticky; top: 32px; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; margin: 0; padding: 4px 0 4px 20px; border-left: 1px solid #e5e5e5; max-height: calc(100vh - 64px); overflow-y: auto; }
+  .topic-nav a { display: block; line-height: 1.5; text-align: left; }
+}
+@media (max-width: 1279px) {
+  .pub-layout { display: flex; flex-direction: column; }
+  .pub-main { display: contents; }
+  .pub-hero { order: -2; margin-bottom: 0; }
+  .topic-nav { order: -1; margin: 22px 0 0; }
+}
 @media (max-width: 767px) {
   .page__content .pub-hero h1 { font-size: 28px; }
   .page__content .pub-section h2 { font-size: 24px; }
@@ -39,13 +56,6 @@ permalink: /Publications.html
     <div class="pub-hero">
       <h1>Publications</h1>
       <p>My publications and preprints, grouped by research topic.</p>
-    </div>
-
-    <div class="topic-nav">
-      <a href="#near-field">Near-field Communications (NFC)</a>
-      <a href="#intelligent-antenna">Intelligent Antenna and Surface (IAaS)</a>
-      <a href="#symbiotic-radio">Symbiotic Radio (SR)</a>
-      <a href="#robotics">Robotics and Motion Planning</a>
     </div>
 
     <span class="anchor" id="publications"></span>
@@ -296,4 +306,11 @@ permalink: /Publications.html
     </div>
 
   </div>
+
+    <nav class="topic-nav" aria-label="Publication research topics">
+      <a href="#near-field">Near-field Communications (NFC)</a>
+      <a href="#intelligent-antenna">Intelligent Antenna and Surface (IAaS)</a>
+      <a href="#symbiotic-radio">Symbiotic Radio (SR)</a>
+      <a href="#robotics">Robotics and Motion Planning</a>
+    </nav>
 </div>

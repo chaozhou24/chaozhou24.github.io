@@ -14,7 +14,7 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" role="main">
+    <div id="main" role="main"{% if page.main_class %} class="{{ page.main_class | escape }}"{% endif %}>
       {% include sidebar.html %}
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
