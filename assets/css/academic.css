@@ -1,6 +1,6 @@
 /* Shared academic template for all site pages. */
-body { color: #333; background: #fff; }
-.page__content, .page__content * { font-family: Georgia, "Times New Roman", serif; }
+body { color: #333; background: #fff; font-family: "Times New Roman", Times, serif; }
+.page__content, .page__content * { font-family: "Times New Roman", Times, serif; }
 .page__content { color: #333; font-size: 18px; line-height: 1.65; }
 .page__content p, .page__content li { text-align: justify; text-justify: inter-word; }
 .page__content a, .sidebar a, .masthead a, .page__footer a,
@@ -9,12 +9,13 @@ body { color: #333; background: #fff; }
 .page__content a:hover, .sidebar a:hover, .masthead a:hover, .page__footer a:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
 .greedy-nav .visible-links a::before { background: #111; }
+.sidebar { font-family: "Times New Roman", Times, serif; }
 .sidebar, .sidebar .social-icons i { color: #333 !important; }
-.sidebar .author__name { color: #111; font-family: Georgia, "Times New Roman", serif; }
+.sidebar .author__name { color: #111; font-family: "Times New Roman", Times, serif; }
 .sidebar .author__avatar img { width: 160px; height: 160px; object-fit: cover; object-position: center; padding: 0; border: 0; border-radius: 50%; }
 
 /* Shared navigation and profile on every page. */
-.masthead .greedy-nav a, .masthead .greedy-nav a:visited { color: #111; font-family: "Segoe UI", Arial, sans-serif; font-weight: 700; text-decoration: none; }
+.masthead .greedy-nav a, .masthead .greedy-nav a:visited { color: #111; font-family: "Times New Roman", Times, serif; font-weight: 700; text-decoration: none; }
 .masthead .greedy-nav a:hover { color: #111; text-decoration: underline; text-underline-offset: 3px; }
 .masthead .greedy-nav .visible-links a::before { background: #111; }
 .sidebar .author__urls a, .sidebar .author__urls_sm a { color: #111; font-weight: 700; text-decoration: none; }
@@ -36,7 +37,7 @@ body .photo-item:hover { border-color: #ccc; }
 body .photo-caption { color: #555; }
 
 /* Keep the interactive community's own controls legible in both themes. */
-.dc-page, .dc-page * { font-family: "Segoe UI", Arial, sans-serif; }
+.dc-page, .dc-page * { font-family: "Times New Roman", Times, serif; }
 .dc-page p, .dc-page li { text-align: left; }
 .dc-page a, .dc-page a:visited, .dc-page a:hover { color: var(--dc-text); }
 .dc-page b, .dc-page strong { color: inherit; }
@@ -96,7 +97,7 @@ body .page__content .page-directory a:hover {
 /* Shared main navigation: title-sized labels, current-page color, separators. */
 .masthead #site-nav a,
 .masthead #site-nav a:visited {
-  color: #111; font-family: "Segoe UI", Arial, sans-serif;
+  color: #111; font-family: "Times New Roman", Times, serif;
   font-size: 32px; font-weight: 700; line-height: 1.2;
 }
 .masthead .masthead__menu-item--lg { padding-right: 0; }
@@ -124,7 +125,7 @@ body .page__content .page-directory a:hover {
 .research-topic p { margin: 0 0 16px; }
 .page__content .research-figure { display: block; width: 100%; margin: 24px 0 0; }
 .page__content .research-figure img { display: block; width: 100%; max-width: none; height: auto; margin: 0 auto; border: 1px solid #e5e5e5; border-radius: 0; background: #fff; }
-.page__content .research-figure figcaption { margin: 10px 0 0; color: #666; font-family: Georgia, "Times New Roman", serif; font-size: 14px; line-height: 1.5; text-align: center; }
+.page__content .research-figure figcaption { margin: 10px 0 0; color: #666; font-family: "Times New Roman", Times, serif; font-size: 14px; line-height: 1.5; text-align: center; }
 @media (max-width: 767px) {
   .page__content .research-topic h3 { font-size: 21px; }
   .research-topic { margin-bottom: 30px; }

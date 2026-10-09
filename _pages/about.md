@@ -76,37 +76,37 @@ redirect_from:
 <div class="research-overview">
   <section class="research-topic" aria-labelledby="research-nfc">
     <h3 id="research-nfc">Near-field Communications (NFC)</h3>
-    <p>Near-field communications exploit the spherical wavefronts of large antenna arrays, making wireless channels dependent on both angle and distance. This enables spatially focused transmission and creates new opportunities for communications and sensing.</p>
-    <p><strong>My focus:</strong> I focus on flexible beamforming and beam coverage, mixed near-field and far-field communications, and robust transmission design. My work also explores physical-layer security and target localization in extremely large-scale MIMO (XL-MIMO) systems.</p>
+    <p>Near-field communications account for the spherical wavefronts of large antenna arrays, so that the channel response depends on both the angle and distance of a terminal. This angle–distance dependence supports beam focusing and motivates different designs from conventional far-field beam steering.</p>
+    <p><strong>My focus:</strong> My work covers <a href="https://doi.org/10.1109/TWC.2026.3717922">Fourier-transform-based beam coverage design</a> in near-field and far-field regions, <a href="https://doi.org/10.1109/TWC.2026.3690730">robust near-field beamforming under eavesdropper location uncertainty</a>, and <a href="https://doi.org/10.1109/TWC.2026.3673378">movable XL-array design for mixed-field covert communications</a>. These studies address beam coverage, secrecy robustness, and the joint optimization of subarray positions and transmit beamforming, respectively.</p>
     <figure class="research-figure">
-      <a class="research-image-link" href="/images/research/near-field-en.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution near field illustration">
-        <img src="/images/research/near-field-en.png" width="1672" height="941" loading="lazy" decoding="async" alt="English illustration of near-field and far-field wireless communication scenarios around an XL-MIMO base station.">
+      <a class="research-image-link" href="/images/research/near-field-en.png?v=20261009-white" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution near field illustration">
+        <img src="/images/research/near-field-en.png?v=20261009-white" width="1672" height="941" loading="lazy" decoding="async" alt="English illustration of near-field and far-field wireless communication scenarios around an XL-MIMO base station.">
       </a>
-      <figcaption>Near-field and far-field communications across industrial, urban, aerial, and campus scenarios.</figcaption>
+      <figcaption>Conceptual near-field and far-field communication scenarios; illustration only.</figcaption>
     </figure>
   </section>
 
   <section class="research-topic" aria-labelledby="research-antennas">
     <h3 id="research-antennas">Intelligent Antennas and Surfaces</h3>
-    <p>Intelligent antennas and surfaces introduce new ways to shape wireless propagation. Reconfigurable antennas adjust their positions or orientations, while intelligent reflecting surfaces (IRSs) tune reflected signals to improve the wireless channel.</p>
-    <p><strong>My focus:</strong> I focus on movable and rotatable antenna systems, IRS-assisted communications, and the joint design of antenna configurations, surface responses, and beamforming. My work also studies channel estimation and system deployment for large-scale IRSs.</p>
+    <p>Intelligent antennas and surfaces provide additional ways to configure a wireless channel: antennas can change position or orientation, while an intelligent reflecting surface (IRS) controls the reflected signal. Their configuration and placement affect the communication and sensing links.</p>
+    <p><strong>My focus:</strong> My published work includes <a href="https://doi.org/10.1109/LWC.2025.3580889">joint array-rotation and transmit-beamforming design for integrated sensing and communications</a>, <a href="https://doi.org/10.1109/LWC.2026.3651470">two-layer movable antenna positioning</a> through subarray movement and per-subarray element adjustment, and <a href="https://doi.org/10.1109/ICSIDP62679.2024.10868156">XL-IRS deployment optimization for multi-user communications</a>. The respective design objectives are balancing user sum-rate and target angle estimation, maximizing communication sum-rate, and optimizing surface placement for near-field multi-user transmission.</p>
     <figure class="research-figure">
-      <a class="research-image-link" href="/images/research/intelligent-antennas-en.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution intelligent antennas illustration">
-        <img src="/images/research/intelligent-antennas-en.png" width="1774" height="887" loading="lazy" decoding="async" alt="Original English illustration in three panels showing movable antenna position control, rotatable antenna orientation control, and intelligent reflecting surface reflection control.">
+      <a class="research-image-link" href="/images/research/intelligent-antennas-en.png?v=20261009-white" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution intelligent antennas illustration">
+        <img src="/images/research/intelligent-antennas-en.png?v=20261009-white" width="1774" height="887" loading="lazy" decoding="async" alt="White-background academic campus scenarios illustrating two-layer movable antenna positioning, rotatable antennas for ISAC, and XL-IRS-assisted multi-user communications, with black serif labels.">
       </a>
-      <figcaption>Position control, orientation control, and reflection control for joint configuration and beamforming.</figcaption>
+      <figcaption>Separate conceptual scenarios for two-layer movable antennas, rotatable-antenna ISAC, and XL-IRS-assisted multi-user communications; illustration only.</figcaption>
     </figure>
   </section>
 
   <section class="research-topic" aria-labelledby="research-backscatter">
     <h3 id="research-backscatter">Backscatter Communications and Symbiotic Radio</h3>
-    <p>Backscatter communications allow low-power devices to convey data by modulating and reflecting an incident radio signal. Symbiotic radio (SR) integrates these secondary transmissions with a primary communication link, allowing the two systems to share spectrum and signal resources.</p>
-    <p><strong>My focus:</strong> I focus on symbiotic radio systems assisted by active RISs, STAR-RISs, and movable antennas. My research develops joint beamforming and resource-allocation methods to reduce transmit power, improve energy efficiency, and enhance transmission security while supporting both primary and secondary links.</p>
+    <p>Backscatter communication conveys information by modulating and reflecting an incident radio signal. In symbiotic radio, the secondary transmission uses the primary signal as its carrier, and the primary and secondary links operate together.</p>
+    <p><strong>My focus:</strong> My work studies <a href="https://doi.org/10.1109/TCCN.2023.3306367">transmit-power minimization for STAR-RIS-assisted symbiotic radio</a> by designing active beamforming and surface transmission/reflection coefficients; <a href="https://doi.org/10.1109/TWC.2023.3265770">robust secure multicast transmission with an active RIS</a> under imperfect eavesdropper channel information; and <a href="https://doi.org/10.1109/LWC.2024.3443460">movable-antenna-enabled symbiotic radio</a> to improve primary and secondary rates through antenna positioning.</p>
     <figure class="research-figure">
-      <a class="research-image-link" href="/images/research/symbiotic-radio-en.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution symbiotic radio illustration">
-        <img src="/images/research/symbiotic-radio-en.png" width="1448" height="1086" loading="lazy" decoding="async" alt="English RIS-assisted symbiotic radio diagram showing a primary transmitter, a reconfigurable intelligent surface, a primary user and a secondary user, with five labeled signal paths.">
+      <a class="research-image-link" href="/images/research/symbiotic-radio-en.png?v=20261009-white" target="_blank" rel="noopener noreferrer" aria-label="Open full-resolution symbiotic radio illustration">
+        <img src="/images/research/symbiotic-radio-en.png?v=20261009-white" width="1448" height="1086" loading="lazy" decoding="async" alt="English RIS-assisted symbiotic radio diagram showing a primary transmitter, a reconfigurable intelligent surface, a primary user and a secondary user, with five labeled signal paths.">
       </a>
-      <figcaption>RIS-assisted symbiotic radio: primary transmission and secondary backscatter share signal and spectrum resources.</figcaption>
+      <figcaption>Conceptual RIS-assisted symbiotic radio links showing primary transmission and secondary backscatter; illustration only.</figcaption>
     </figure>
   </section>
 </div>
