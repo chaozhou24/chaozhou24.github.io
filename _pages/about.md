@@ -49,6 +49,8 @@ redirect_from:
 }
 </style>
 
+<div class="directory-layout">
+  <div class="directory-main">
 <div class="hero-card">
 
   <h1 class="hello-line">Hello!</h1>
@@ -71,13 +73,6 @@ redirect_from:
 
 </div>
 
-<div class="home-links">
-  <a class="home-btn" href="mailto:zhouchao2024@mail.sustech.edu.cn">Email</a>
-  <a class="home-btn" href="https://scholar.google.com/citations?user=o5Sqh2MAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-  <a class="home-btn" href="#news">News</a>
-  <a class="home-btn" href="/Publications.html">Publications</a>
-  <a class="home-btn" href="/Photos.html">Photos</a>
-</div>
 
 <h2 class="section-title research-title">Research interests</h2>
 
@@ -263,3 +258,14 @@ redirect_from:
 
   </ul>
 </div>
+  </div>
+
+<nav class="home-links page-directory" aria-label="Homepage shortcuts">
+  <a class="home-btn" href="mailto:zhouchao2024@mail.sustech.edu.cn">Email</a>
+  <a class="home-btn" href="https://scholar.google.com/citations?user=o5Sqh2MAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+  <a class="home-btn" href="#news">News</a>
+  <a class="home-btn" href="/Publications.html">Publications</a>
+  <a class="home-btn" href="/Photos.html">Photos</a>
+</nav>
+</div>
+

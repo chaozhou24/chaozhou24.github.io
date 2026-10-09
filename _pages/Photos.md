@@ -331,16 +331,13 @@ permalink: /Photos.html
 }
 </style>
 
+<div class="directory-layout">
+  <div class="directory-main">
 <div class="photo-hero">
   <h1>📷 Photos</h1>
   <p>Moments from academic activities, campus life, and personal travels.</p>
 </div>
 
-<div class="photo-nav">
-  <a href="#phd">PhD (2024–Present)</a>
-  <a href="#masters">Master's (2021–2024)</a>
-  <a href="#personal">Personal</a>
-</div>
 
 <span id="phd"></span>
 <div class="photo-section">
@@ -448,6 +445,14 @@ permalink: /Photos.html
     </div>
 
   </div>
+</div>
+  </div>
+
+<nav class="photo-nav page-directory" aria-label="Photo categories">
+  <a href="#phd">PhD (2024–Present)</a>
+  <a href="#masters">Master's (2021–2024)</a>
+  <a href="#personal">Personal</a>
+</nav>
 </div>
 
 <div id="lightbox">

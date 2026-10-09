@@ -64,3 +64,31 @@ body .photo-caption { color: #555; }
   #main > .sidebar { float: none; width: auto; min-width: 0; margin: 0; padding: 0; }
   #main > .page { float: none; width: 100%; min-width: 0; max-width: none; margin: 0; padding: 0; }
 }
+
+/* Home and photo shortcuts use the same right-hand directory as Publications. */
+.directory-main { min-width: 0; }
+body .page__content .page-directory { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+body .page__content .page-directory a,
+body .page__content .page-directory a:hover {
+  display: block; padding: 0; border: 0; border-radius: 0;
+  background: none; box-shadow: none; transform: none;
+  color: #111; font-size: 16px; font-weight: 700; line-height: 1.5; text-align: left;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.directory-main .section-title, .directory-main > span[id] { scroll-margin-top: 80px; }
+@media (min-width: 1280px) {
+  .directory-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; column-gap: 36px; align-items: start; }
+  .directory-main { grid-column: 1; grid-row: 1; }
+  body .page__content .page-directory {
+    grid-column: 2; grid-row: 1; position: sticky; top: 80px;
+    flex-direction: column; align-items: flex-start; gap: 20px;
+    margin: 0; padding: 4px 0 4px 20px; border-left: 1px solid #e5e5e5;
+    max-height: calc(100vh - 112px); overflow-y: auto;
+  }
+}
+@media (max-width: 1279px) {
+  .directory-layout { display: flex; flex-direction: column; }
+  .directory-main { display: contents; }
+  .directory-layout .hero-card, .directory-layout .photo-hero { order: -2; margin-bottom: 0; }
+  body .page__content .page-directory { order: -1; margin: 22px 0 32px; }
+}
