@@ -98,7 +98,7 @@ body .page__content .page-directory a:hover {
 .masthead #site-nav a,
 .masthead #site-nav a:visited {
   color: #111; font-family: "Times New Roman", Times, serif;
-  font-size: 32px; font-weight: 700; line-height: 1.2;
+  font-size: 28px; font-weight: 700; line-height: 1.2;
 }
 .masthead .masthead__menu-item--lg { padding-right: 0; }
 .masthead #site-nav a[aria-current="page"],
