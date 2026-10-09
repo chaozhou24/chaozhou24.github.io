@@ -115,3 +115,19 @@ body .page__content .page-directory a:hover {
   .masthead #site-nav .visible-links > li + li::after { height: 24px; }
   .masthead #site-nav .visible-links > li:nth-child(2)::after { display: none; }
 }
+
+/* Research areas: an overview, personal focus, and a conceptual illustration. */
+.research-overview { margin-top: 24px; }
+.research-topic { margin: 0 0 40px; scroll-margin-top: 90px; }
+.research-topic + .research-topic { padding-top: 30px; border-top: 1px solid #e5e5e5; }
+.page__content .research-topic h3 { margin: 0 0 16px; color: #111; font-size: 23px; font-weight: 700; line-height: 1.35; text-align: left; scroll-margin-top: 90px; }
+.research-topic p { margin: 0 0 16px; }
+.page__content .research-figure { display: block; width: 100%; margin: 24px 0 0; }
+.page__content .research-figure img { display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto; border: 1px solid #e5e5e5; border-radius: 0; background: #fff; }
+.page__content .research-figure figcaption { margin: 10px 0 0; color: #666; font-family: Georgia, "Times New Roman", serif; font-size: 14px; line-height: 1.5; text-align: center; }
+@media (max-width: 767px) {
+  .page__content .research-topic h3 { font-size: 21px; }
+  .research-topic { margin-bottom: 30px; }
+  .research-topic + .research-topic { padding-top: 24px; }
+  .page__content .research-figure { margin-top: 20px; }
+}

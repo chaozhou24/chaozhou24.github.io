@@ -16,9 +16,6 @@ redirect_from:
 .home-links { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 20px 0 32px; }
 .home-links a { font-size: 17px; }
 .page__content .section-title { margin: 36px 0 18px; padding: 0 0 10px; border-bottom: 1px solid #e5e5e5; color: #111; font-size: 28px; font-weight: 700; line-height: 1.3; text-align: left; scroll-margin-top: 24px; }
-.research-bullets { padding-left: 24px; margin: 0; }
-.research-bullets li { margin: 0 0 10px; }
-.research-bullets strong { color: #111; }
 .news-list { margin: 0; }
 .news-item { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 16px; margin: 0 0 17px; }
 .news-date { color: #666; font-size: 16px; font-weight: 400; padding-top: 2px; white-space: nowrap; }
@@ -76,11 +73,37 @@ redirect_from:
 
 <h2 class="section-title research-title" id="research-interests">Research interests</h2>
 
-<ul class="research-bullets">
-  <li><strong>Near-field communications:</strong> flexible beamforming design and mixed-field communications.</li>
-  <li><strong>Intelligent antennas and surfaces:</strong> intelligent reflecting surfaces and reconfigurable antennas.</li>
-  <li><strong>Backscatter communications:</strong> symbiotic radio.</li>
-</ul>
+<div class="research-overview">
+  <section class="research-topic" aria-labelledby="research-nfc">
+    <h3 id="research-nfc">Near-field Communications (NFC)</h3>
+    <p>Near-field communications exploit the spherical wavefronts of large antenna arrays, making wireless channels dependent on both angle and distance. This enables spatially focused transmission and creates new opportunities for communications and sensing.</p>
+    <p><strong>My focus:</strong> I focus on flexible beamforming and beam coverage, mixed near-field and far-field communications, and robust transmission design. My work also explores physical-layer security and target localization in extremely large-scale MIMO (XL-MIMO) systems.</p>
+    <figure class="research-figure">
+      <img src="/images/research/near-field.svg" width="960" height="320" loading="lazy" decoding="async" alt="Comparison of near-field beam focusing at a specific location and far-field directional transmission with approximately planar wavefronts.">
+      <figcaption>Near-field beam focusing and far-field directional transmission motivate flexible designs for mixed-field systems.</figcaption>
+    </figure>
+  </section>
+
+  <section class="research-topic" aria-labelledby="research-antennas">
+    <h3 id="research-antennas">Intelligent Antennas and Surfaces</h3>
+    <p>Intelligent antennas and surfaces introduce new ways to shape wireless propagation. Reconfigurable antennas adjust their positions or orientations, while intelligent reflecting surfaces (IRSs) tune reflected signals to improve the wireless channel.</p>
+    <p><strong>My focus:</strong> I focus on movable and rotatable antenna systems, IRS-assisted communications, and the joint design of antenna configurations, surface responses, and beamforming. My work also studies channel estimation and system deployment for large-scale IRSs.</p>
+    <figure class="research-figure">
+      <img src="/images/research/intelligent-antennas.svg" width="960" height="340" loading="lazy" decoding="async" alt="Movable and rotatable antennas send signals to users over direct paths and paths reflected by an intelligent surface. Antenna configurations and surface responses can be jointly optimized.">
+      <figcaption>Reconfiguring antenna positions, orientations, and surface responses provides additional control over wireless channels.</figcaption>
+    </figure>
+  </section>
+
+  <section class="research-topic" aria-labelledby="research-backscatter">
+    <h3 id="research-backscatter">Backscatter Communications and Symbiotic Radio</h3>
+    <p>Backscatter communications allow low-power devices to convey data by modulating and reflecting an incident radio signal. Symbiotic radio (SR) integrates these secondary transmissions with a primary communication link, allowing the two systems to share spectrum and signal resources.</p>
+    <p><strong>My focus:</strong> I focus on symbiotic radio systems assisted by active RISs, STAR-RISs, and movable antennas. My research develops joint beamforming and resource-allocation methods to reduce transmit power, improve energy efficiency, and enhance transmission security while supporting both primary and secondary links.</p>
+    <figure class="research-figure">
+      <img src="/images/research/symbiotic-radio.svg" width="960" height="340" loading="lazy" decoding="async" alt="A primary transmitter serves its receiver while a backscatter device modulates the same incident signal to communicate with a secondary receiver.">
+      <figcaption>The primary signal supports a conventional communication link and carries secondary information through backscatter modulation.</figcaption>
+    </figure>
+  </section>
+</div>
 
 <h2 class="section-title" id="news">News</h2>
 
