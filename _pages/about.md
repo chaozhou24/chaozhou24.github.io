@@ -53,7 +53,7 @@ redirect_from:
   <div class="directory-main">
 <div class="hero-card">
 
-  <h1 class="hello-line">Hello!</h1>
+  <h1 class="hello-line" id="hello" style="scroll-margin-top: 80px;">Hello!</h1>
 
   <p>
     I am a Ph.D. candidate at Southern University of Science and Technology (SUSTech),
@@ -74,7 +74,7 @@ redirect_from:
 </div>
 
 
-<h2 class="section-title research-title">Research interests</h2>
+<h2 class="section-title research-title" id="research-interests">Research interests</h2>
 
 <ul class="research-bullets">
   <li><strong>Near-field communications:</strong> flexible beamforming design and mixed-field communications.</li>
@@ -260,12 +260,12 @@ redirect_from:
 </div>
   </div>
 
-<nav class="home-links page-directory" aria-label="Homepage shortcuts">
-  <a class="home-btn" href="mailto:zhouchao2024@mail.sustech.edu.cn">Email</a>
-  <a class="home-btn" href="https://scholar.google.com/citations?user=o5Sqh2MAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+<nav class="home-links page-directory" aria-label="Homepage sections">
+  <a class="home-btn" href="#hello">Hello!</a>
+  <a class="home-btn" href="#research-interests">Research interests</a>
   <a class="home-btn" href="#news">News</a>
-  <a class="home-btn" href="/Publications.html">Publications</a>
-  <a class="home-btn" href="/Photos.html">Photos</a>
+  <a class="home-btn" href="#selected-publications">Selected publications</a>
+  <a class="home-btn" href="#academic-services">Academic Services</a>
 </nav>
 </div>
 
