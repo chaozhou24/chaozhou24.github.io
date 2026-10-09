@@ -93,13 +93,25 @@ body .page__content .page-directory a:hover {
   body .page__content .page-directory { order: -1; margin: 22px 0 32px; }
 }
 
-/* Give the main navigation the same size as page titles. */
-.masthead .greedy-nav a { font-size: 32px; line-height: 1.2; }
+/* Shared main navigation: title-sized labels, current-page color, separators. */
+.masthead #site-nav a,
+.masthead #site-nav a:visited {
+  color: #111; font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 32px; font-weight: 700; line-height: 1.2;
+}
 .masthead .masthead__menu-item--lg { padding-right: 0; }
-.masthead .greedy-nav a[aria-current="page"],
-.masthead .greedy-nav a[aria-current="page"]:visited,
-.masthead .greedy-nav a[aria-current="page"]:hover { color: #1f5fae; }
-.masthead .greedy-nav .visible-links a[aria-current="page"]::before { background: #1f5fae; }
+.masthead #site-nav a[aria-current="page"],
+.masthead #site-nav a[aria-current="page"]:visited,
+.masthead #site-nav a[aria-current="page"]:hover { color: #1f5fae; }
+.masthead #site-nav .visible-links a[aria-current="page"]::before { background: #1f5fae; }
+.masthead #site-nav .visible-links > li { position: relative; }
+.masthead #site-nav .visible-links > li + li::after {
+  content: ""; position: absolute; left: 0; top: 50%;
+  height: 28px; border-left: 1px solid #999;
+  transform: translateY(-50%); pointer-events: none;
+}
 @media (max-width: 767px) {
-  .masthead .greedy-nav a { font-size: 28px; }
+  .masthead #site-nav a, .masthead #site-nav a:visited { font-size: 28px; }
+  .masthead #site-nav .visible-links > li + li::after { height: 24px; }
+  .masthead #site-nav .visible-links > li:nth-child(2)::after { display: none; }
 }
